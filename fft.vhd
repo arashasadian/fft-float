@@ -22,13 +22,64 @@ architecture arch of fft is
     signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : float32;
     signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : float32;
     signal bt_coef_imag, bt_coef_real : float32;
+    signal middle1_real, middle1_imag : array_of_float32(N - 1 downto 0);
+    signal middle2_real, middle2_imag :  array_of_float32(N - 1 downto 0);
+    signal middle_done : std_logic := '0';
+    signal input_split_done : std_logic := '0';
+    signal final_done : std_logic := '0';
+
     begin
     butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
         bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
 
     calculate_bt_inputs : process( clk )
+    variable last_index_done : integer;
     begin
-        
-    end process ; -- calculate_bt_inputs
+      if rising_edge(clk) then
+        if input_split_done = '0' then
+          if last_index_done <  7 then
+            bt_in1_real <= input_array_real(input_index_rom(last_index_done));
+            bt_in1_imag <= input_array_imag(input_index_rom(last_index_done));
+            bt_in2_real <= input_array_real(input_index_rom(last_index_done + 1));
+            bt_in2_imag <= input_array_imag(input_index_rom(last_index_done + 1));
+
+            middle1_real(last_index_done) <= bt_out1_real;
+            middle1_imag(last_index_done) <= bt_out1_imag;
+            middle2_real(last_index_done) <= bt_out2_real;
+            middle2_imag(last_index_done) <= bt_out2_imag;
+            
+            bt_coef_real  <= to_float(2);
+            bt_coef_imag <= to_float(3);
+
+            last_index_done := last_index_done + 2;
+          else
+            input_split_done <= '1';
+            last_index_done := 0;
+          end if;
+        end if;
+        if input_split_done = '1' and middle_done = '0'then
+          if last_index_done <  8 then
+            
+
+            last_index_done := last_index_done + 2;
+          else
+            middle_done <= '1';
+            last_index_done := 0;
+          end if;
+        end if;
+        if input_split_done = '1' and middle_done = '1' and final_done = '0' then
+          if last_index_done <  8 then
+            
+
+            last_index_done := last_index_done + 2;
+          else
+            final_done <= '1';
+            last_index_done := 0;
+          end if;
+        end if;
+    end if;
+  end process ; -- calculate_bt_inputs
+
+  done <= final_done;
 
 end architecture arch;
