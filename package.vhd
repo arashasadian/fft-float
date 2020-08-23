@@ -21,10 +21,25 @@ package fftpackage is
           output2_imag : out float32
         ) ;
       end component butterfly;
+
+      component fft is
+        generic ( N : integer := 8);
+        port (
+          clk : in std_logic;
+          input_array_real : in array_of_float32(N - 1 downto 0);
+          input_array_imag : in array_of_float32(N - 1 downto 0);
+          output_array_real : out array_of_float32(N - 1 downto 0);
+          output_array_imag : out array_of_float32(N - 1 downto 0);
+          done : out std_logic
+        ) ;
+      end component fft;
     signal middle_index_rom : array_of_integer(7 downto 0);
     signal output_index_rom : array_of_integer(7 downto 0);
     signal input_index_rom : array_of_integer(7 downto 0);
     signal sin_rom, cos_rom : array_of_float32(360 downto 0);
+
+    procedure index_rom_generator (signal enable : in std_logic; 
+    signal input_index, mid_index, final_index : inout array_of_integer(7 downto 0));
 
 
 end package fftpackage;
