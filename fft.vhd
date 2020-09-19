@@ -79,10 +79,10 @@ architecture arch of fft is
               bt_coef_imag <= to_float(0.707107);
             end if;
 
-            middle2_real(last_index_done) <= bt_out1_real;
-            middle2_imag(last_index_done) <= bt_out1_imag;
-            middle2_real(last_index_done + 1) <= bt_out2_real;
-            middle2_imag(last_index_done + 1) <= bt_out2_imag;
+            middle2_real(middle_index_rom(last_index_done)) <= bt_out1_real;
+            middle2_imag(middle_index_rom(last_index_done)) <= bt_out1_imag;
+            middle2_real(middle_index_rom(last_index_done+1)) <= bt_out2_real;
+            middle2_imag(middle_index_rom(last_index_done+1)) <= bt_out2_imag;
             
             
 
@@ -109,7 +109,6 @@ architecture arch of fft is
             
               output_array_real(output_index_rom(last_index_done)) <= bt_out1_real;
               output_array_imag(output_index_rom(last_index_done)) <= bt_out1_imag;
-              
               output_array_real(output_index_rom(last_index_done + 1)) <= bt_out2_real;
               output_array_imag(output_index_rom(last_index_done + 1)) <= bt_out2_imag;
 
