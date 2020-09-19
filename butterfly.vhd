@@ -22,7 +22,7 @@ end entity butterfly;
 
 architecture butterfly_arch of butterfly is
     begin
-    process(clk)
+    process(clk,input1_imag , input2_imag , input1_real , input2_imag , coefficient_imag , coefficient_real)
      begin
         if rising_edge(clk) then
             output1_real <= input1_real + (coefficient_real * input2_real) - (coefficient_imag * input2_imag);

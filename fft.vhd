@@ -33,7 +33,7 @@ architecture arch of fft is
     butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
         bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
 
-    calculate_bt_inputs : process( clk )
+    calculate_bt_inputs : process( clk)
     variable last_index_done : integer := 0;
     variable bt_k : integer;
     begin
@@ -48,15 +48,15 @@ architecture arch of fft is
 
             bt_coef_real  <= to_float(1);
             bt_coef_imag <= to_float(0);
-
-            middle_real(last_index_done) <= bt_out1_real;
-            middle_imag(last_index_done) <= bt_out1_imag;
-            middle_real(last_index_done + 1) <= bt_out2_real;
-            middle_imag(last_index_done + 1) <= bt_out2_imag;
+            if(last_index_done >= 4) then
+              middle_real(input_index_rom(last_index_done)) <= bt_out1_real;
+              middle_imag(input_index_rom(last_index_done)) <= bt_out1_imag;
+              middle_real(input_index_rom(last_index_done + 1)) <= bt_out2_real;
+              middle_imag(input_index_rom(last_index_done + 1)) <= bt_out2_imag;
+            end if;
             
-            
-
             last_index_done := last_index_done + 2;
+
           else
             input_split_done <= '1';
             last_index_done := 0;
@@ -64,7 +64,7 @@ architecture arch of fft is
         end if;
 
         if input_split_done = '1' and middle_done = '0'then
-          if last_index_done <  8 then
+          if last_index_done < 8 then
             bt_in1_real <= middle_real(middle_index_rom(last_index_done));
             bt_in1_imag <= middle_imag(middle_index_rom(last_index_done));
             bt_in2_real <= middle_real(middle_index_rom(last_index_done + 1));
@@ -75,8 +75,8 @@ architecture arch of fft is
               bt_coef_imag <= to_float(0);
               
             else
-            bt_coef_real <= to_float(0.707107);
-            bt_coef_imag <= to_float(0.707107);
+              bt_coef_real <= to_float(0.707107);
+              bt_coef_imag <= to_float(0.707107);
             end if;
 
             middle2_real(last_index_done) <= bt_out1_real;
