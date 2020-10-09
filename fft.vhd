@@ -48,78 +48,80 @@ architecture arch of fft is
 
             bt_coef_real  <= to_float(1);
             bt_coef_imag <= to_float(0);
-            if(last_index_done >= 4) then
-              middle_real(input_index_rom(last_index_done)) <= bt_out1_real;
-              middle_imag(input_index_rom(last_index_done)) <= bt_out1_imag;
-              middle_real(input_index_rom(last_index_done + 1)) <= bt_out2_real;
-              middle_imag(input_index_rom(last_index_done + 1)) <= bt_out2_imag;
-            end if;
-            
-            last_index_done := last_index_done + 2;
 
           else
             input_split_done <= '1';
             last_index_done := 0;
           end if;
-        end if;
-
-        if input_split_done = '1' and middle_done = '0'then
+      elsif input_split_done = '1' and middle_done = '0'then
           if last_index_done < 8 then
             bt_in1_real <= middle_real(middle_index_rom(last_index_done));
             bt_in1_imag <= middle_imag(middle_index_rom(last_index_done));
             bt_in2_real <= middle_real(middle_index_rom(last_index_done + 1));
             bt_in2_imag <= middle_imag(middle_index_rom(last_index_done + 1));
-
-            if middle_index_rom(last_index_done) < 4 then
+    
+            if last_index_done < 4 then
               bt_coef_real <= to_float(1);
               bt_coef_imag <= to_float(0);
-              
+                  
             else
-              bt_coef_real <= to_float(0.707107);
-              bt_coef_imag <= to_float(0.707107);
+              bt_coef_real <= to_float(0);
+              bt_coef_imag <= to_float(-1);
             end if;
-
+          else
+            middle_done <= '1';
+            last_index_done := 0;
+          end if;
+      else
+        if last_index_done <  8 then
+          bt_in1_real <= middle2_real(output_index_rom(last_index_done));
+          bt_in1_imag <= middle2_imag(output_index_rom(last_index_done));
+          bt_in2_real <= middle2_real(output_index_rom(last_index_done + 1));
+          bt_in2_imag <= middle2_imag(output_index_rom(last_index_done + 1));
+    
+          bt_coef_real <= to_float(1) when output_index_rom(last_index_done) = 0 else to_float(0.707107)
+              when output_index_rom(last_index_done) = 1 else to_float(0) when output_index_rom(last_index_done) = 2 else to_float(-0.707107);
+                
+          bt_coef_imag <= to_float(0) when output_index_rom(last_index_done) = 0 else to_float(-0.707107)
+              when output_index_rom(last_index_done) = 1 else to_float(-1) when output_index_rom(last_index_done) = 2 else to_float(-0.707107);
+        else
+          final_done <= '1';
+          last_index_done := 0;
+        end if;
+      end if;
+      elsif falling_edge(clk) then
+        if input_split_done = '0' then
+          if last_index_done < 7 then
+            middle_real(input_index_rom(last_index_done)) <= bt_out1_real;
+            middle_imag(input_index_rom(last_index_done)) <= bt_out1_imag;
+            middle_real(input_index_rom(last_index_done + 1)) <= bt_out2_real;
+            middle_imag(input_index_rom(last_index_done + 1)) <= bt_out2_imag;
+            
+            last_index_done := last_index_done + 2;
+          end if;
+        elsif input_split_done = '1' and middle_done = '0'then
+          if last_index_done < 8 then
             middle2_real(middle_index_rom(last_index_done)) <= bt_out1_real;
             middle2_imag(middle_index_rom(last_index_done)) <= bt_out1_imag;
             middle2_real(middle_index_rom(last_index_done+1)) <= bt_out2_real;
             middle2_imag(middle_index_rom(last_index_done+1)) <= bt_out2_imag;
             
-            
-
-            
             last_index_done := last_index_done + 2;
-          else
-            middle_done <= '1';
-            last_index_done := 0;
           end if;
-        end if;
-
-        if input_split_done = '1' and middle_done = '1' and final_done = '0' then
+        elsif input_split_done = '1' and middle_done = '1' and final_done = '0' then
           if last_index_done <  8 then
-            bt_in1_real <= middle2_real(output_index_rom(last_index_done));
-            bt_in1_imag <= middle2_imag(output_index_rom(last_index_done));
-            bt_in2_real <= middle2_real(output_index_rom(last_index_done + 1));
-            bt_in2_imag <= middle2_imag(output_index_rom(last_index_done + 1));
-
-            bt_coef_real <= to_float(1) when output_index_rom(last_index_done) = 0 else to_float(0.707107)
-              when output_index_rom(last_index_done) = 1 else to_float(0) when output_index_rom(last_index_done) = 2 else to_float(-0.707107);
-            
-            bt_coef_imag <= to_float(0) when output_index_rom(last_index_done) = 0 else to_float(0.707107)
-              when output_index_rom(last_index_done) = 1 else to_float(1) when output_index_rom(last_index_done) = 2 else to_float(0.707107);
-            
-              output_array_real(output_index_rom(last_index_done)) <= bt_out1_real;
+            output_array_real(output_index_rom(last_index_done)) <= bt_out1_real;
               output_array_imag(output_index_rom(last_index_done)) <= bt_out1_imag;
               output_array_real(output_index_rom(last_index_done + 1)) <= bt_out2_real;
               output_array_imag(output_index_rom(last_index_done + 1)) <= bt_out2_imag;
 
             
             last_index_done := last_index_done + 2;
-          else
-            final_done <= '1';
-            last_index_done := 0;
           end if;
+
         end if;
-    end if;
+
+      end if;
   end process ; -- calculate_bt_inputs
 
   done <= final_done;
