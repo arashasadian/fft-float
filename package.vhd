@@ -60,10 +60,10 @@ package body fftpackage is
 
           mid_index(0) <= 0;
           mid_index(1) <= 2;
-          mid_index(2) <= 4;
-          mid_index(3) <= 6;
-          mid_index(4) <= 1;
-          mid_index(5) <= 3;
+          mid_index(2) <= 1;
+          mid_index(3) <= 3;
+          mid_index(4) <= 4;
+          mid_index(5) <= 6;
           mid_index(6) <= 5;
           mid_index(7) <= 7;
 
