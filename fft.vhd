@@ -40,19 +40,22 @@ architecture arch of fft is
     variable last_index_done : integer := 0;
     variable flag : integer := 0;
     variable bt_k : integer;
+    variable i : integer := 0;
 
     variable index : std_logic_vector(step-1 downto 0) := "000";
     variable in1   : std_logic_vector(step-1 downto 0) := "000";
     variable in2   : std_logic_vector(step-1 downto 0) := "000";
+    variable in1_temp   : std_logic_vector(step-1 downto 0) := "000";
+    variable in2_temp   : std_logic_vector(step-1 downto 0) := "000";
 
     begin
       if rising_edge(clk) then
         if input_split_done = '0' then
           if last_index_done <  7 then
 
-            in1 := index;
+            in1 := index(0) & index(step-1 downto 1);
             index := std_logic_vector(unsigned(index)+1);
-            in2 := index;
+            in2 := index(0) & index(step-1 downto 1);
             index := std_logic_vector(unsigned(index)+1);
 
             bt_in1_real <= input_array_real(to_integer(unsigned(in1)));
@@ -60,8 +63,11 @@ architecture arch of fft is
             bt_in2_real <= input_array_real(to_integer(unsigned(in2)));
             bt_in2_imag <= input_array_imag(to_integer(unsigned(in2)));
 
-            bt_coef_real  <= to_float(1);
-            bt_coef_imag <= to_float(0);
+            bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
+            when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+                
+            bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
+            when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
             
             report "1.The value of 'in1' is " & integer'image(to_integer(unsigned(in1)));
             report "2.The value of 'in2 is" & integer'image(to_integer(unsigned(in2)));
@@ -111,10 +117,12 @@ architecture arch of fft is
         if last_index_done <  8 then
           flag := 0;
 
-          in1 := index(0) & index(step-1 downto 1);
-            index := std_logic_vector(unsigned(index)+1);
-            in2 := index(0) & index(step-1 downto 1);
-            index := std_logic_vector(unsigned(index)+1);
+          in1 := index(2) & index(1) & index(0);
+          index := std_logic_vector(unsigned(index)+1);
+          in2 := index(2) & index(1) & index(0);
+          index := std_logic_vector(unsigned(index)+1);
+
+            
 
           report "5.The value of 'in1' is " & integer'image(to_integer(unsigned(in1)));
           report "6.The value of 'in2 is" & integer'image(to_integer(unsigned(in2)));
@@ -124,12 +132,13 @@ architecture arch of fft is
           bt_in2_real <= middle2_real(to_integer(unsigned(in2)));
           bt_in2_imag <= middle2_imag(to_integer(unsigned(in2)));
     
-          bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
-              when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+          --  bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
+          --     when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
                 
-          bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
-              when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-
+          -- bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
+          --     when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+          bt_coef_real <= to_float(1);
+          bt_coef_imag <= to_float(0);
           
         else
           final_done <= '1';
@@ -159,10 +168,17 @@ architecture arch of fft is
           end if;
         elsif input_split_done = '1' and middle_done = '1' and final_done = '0' and flag = 0 then
           if last_index_done <  8 then
-              output_array_real(to_integer(unsigned(in1))) <= bt_out1_real;
-              output_array_imag(to_integer(unsigned(in1))) <= bt_out1_imag;
-              output_array_real(to_integer(unsigned(in2))) <= bt_out2_real;
-              output_array_imag(to_integer(unsigned(in2))) <= bt_out2_imag;
+              -- DIF calculated in bit reversed order
+
+              for i in 0 to step-1 loop
+                in1_temp(step - 1 - i) := in1(i);
+                in2_temp(step - 1 - i) := in2(i);
+              end loop;
+
+              output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
+              output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
+              output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
+              output_array_imag(to_integer(unsigned(in2_temp))) <= bt_out2_imag;
 
             
             last_index_done := last_index_done + 2;

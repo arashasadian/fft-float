@@ -22,29 +22,29 @@ begin
     index_rom_generator(enable, input_index_rom, middle_index_rom, output_index_rom);
     test : process
         begin
-            input_real(7) <= to_float(7);
-            input_imag(7) <= to_float(0);
+            input_real(7) <= to_float(2);
+            input_imag(7) <= to_float(1);
 
-            input_real(3) <= to_float(6);
-            input_imag(3) <= to_float(0);
-            
-            input_real(5) <= to_float(5);
-            input_imag(5) <= to_float(0);
-            
-            input_real(1) <= to_float(4);
-            input_imag(1) <= to_float(0);
-            
             input_real(6) <= to_float(3);
-            input_imag(6) <= to_float(0);
+            input_imag(6) <= to_float(2);
             
-            input_real(2) <= to_float(2);
-            input_imag(2) <= to_float(0);
+            input_real(5) <= to_float(4);
+            input_imag(5) <= to_float(3);
             
-            input_real(4) <= to_float(1);
-            input_imag(4) <= to_float(0);
+            input_real(4) <= to_float(5);
+            input_imag(4) <= to_float(4);
             
-            input_real(0) <= to_float(0);
-            input_imag(0) <= to_float(0);
+            input_real(3) <= to_float(6);
+            input_imag(3) <= to_float(5);
+            
+            input_real(2) <= to_float(7);
+            input_imag(2) <= to_float(6);
+            
+            input_real(1) <= to_float(8);
+            input_imag(1) <= to_float(7);
+            
+            input_real(0) <= to_float(9);
+            input_imag(0) <= to_float(8);
             wait for 20 ns;
         end process ; -- test
         

@@ -22,9 +22,13 @@ entity butterfly is
 end entity butterfly;
 
 architecture butterfly_arch of butterfly is
+    signal temp_real : float32;
+    signal temp_imag : float32;
     begin
-        output1_real <= input1_real + (coefficient_real * input2_real) - (coefficient_imag * input2_imag);
-        output1_imag <= input1_imag + (coefficient_real * input2_imag) + (coefficient_imag * input2_real);
-        output2_real <= input1_real - (coefficient_real * input2_real) + (coefficient_imag * input2_imag);
-        output2_imag <= input1_imag - (coefficient_real * input2_imag) - (coefficient_imag * input2_real);
+        output1_real <= input1_real + input2_real;
+        output1_imag <= input1_imag + input2_imag;
+        temp_real <= input1_real - input2_real;
+        temp_imag <= input1_imag - input2_imag;
+        output2_real <= ((temp_real)*coefficient_real - (temp_imag)*coefficient_imag);
+        output2_imag <= ((temp_real)*coefficient_imag + (temp_imag)*coefficient_real);
 end architecture butterfly_arch;
