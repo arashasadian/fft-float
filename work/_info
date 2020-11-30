@@ -1,0 +1,247 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/arash/test_modelsim
+Ebutterfly
+Z0 w1606676499
+Z1 DPx4 work 10 fftpackage 0 22 IEh0:4b3kbiRDmSX0Kf8L0
+Z2 DPx4 ieee 9 fixed_pkg 0 22 6nURH]dUY5@T6S0eLDXJe2
+Z3 DPx4 ieee 17 fixed_generic_pkg 0 22 `=cI_4Mf07Y0RE[dTgE=F2
+Z4 DPx4 ieee 17 fixed_float_types 0 22 JoVc:0L4XeXcaE?c:FVe62
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx4 ieee 17 float_generic_pkg 0 22 H9F2dgFW`hn13SQYDoo_R2
+Z7 DPx4 ieee 9 float_pkg 0 22 Z81QOO3@T3iYBM^RlCZFZ1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 d/home/arash/Desktop/final_project/fft-float
+Z11 8/home/arash/Desktop/final_project/fft-float/butterfly.vhd
+Z12 F/home/arash/Desktop/final_project/fft-float/butterfly.vhd
+l0
+L8
+VfTnkGLbVV5nF8MRZYc;oc3
+!s100 8ng_jhD0g?:KMAggNf0HR0
+Z13 OV;C;10.5b;63
+33
+Z14 !s110 1606741462
+!i10b 1
+Z15 !s108 1606741462.000000
+Z16 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float/butterfly.vhd|
+Z17 !s107 /home/arash/Desktop/final_project/fft-float/butterfly.vhd|
+!i113 1
+Z18 o-work work -2008 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Abutterfly_arch
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 butterfly 0 22 fTnkGLbVV5nF8MRZYc;oc3
+l27
+L24
+VmHLeC@zCB>GjNLBRD1NZU1
+!s100 T^@W4c[6]dI]VA6C^hJh[0
+R13
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Efft
+Z20 w1606741457
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z21 8/home/arash/Desktop/final_project/fft-float/fft.vhd
+Z22 F/home/arash/Desktop/final_project/fft-float/fft.vhd
+l0
+L10
+V^JbSM@N8JQN@QF3oH@ATF3
+!s100 Hl4P?2I3_F<:hEgAkUhBn1
+R13
+33
+R14
+!i10b 1
+R15
+Z23 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float/fft.vhd|
+Z24 !s107 /home/arash/Desktop/final_project/fft-float/fft.vhd|
+!i113 1
+R18
+R19
+Aarch
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+Z25 DEx4 work 3 fft 0 22 ^JbSM@N8JQN@QF3oH@ATF3
+l30
+L22
+V7GEJgo5GMJ92:m]_52JYS0
+!s100 1C77WEINWZFAX9c_R9][P1
+R13
+33
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19
+Agen
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R25
+l205
+L196
+VE;agXS`O<Ac1K_R:TJz?T1
+!s100 TOle9;aZVALMhJANJi8FT0
+R13
+33
+!s110 1606726538
+!i10b 1
+!s108 1606726538.000000
+R23
+R24
+!i113 1
+R18
+R19
+w1606728354
+Pfftpackage
+R2
+Z26 DBx4 ieee 17 fixed_generic_pkg 4 body 22 1OB>@cS:GBkHTK^gK1Nzm1
+R4
+R5
+Z27 DBx4 ieee 17 float_generic_pkg 4 body 22 WN9:YIQ]Fc2f32ANi3<g`0
+R7
+R8
+R9
+Z28 w1606676480
+R10
+Z29 8/home/arash/Desktop/final_project/fft-float/package.vhd
+Z30 F/home/arash/Desktop/final_project/fft-float/package.vhd
+l0
+L6
+VIEh0:4b3kbiRDmSX0Kf8L0
+!s100 dF5=ib9GBjcLHZR=WRIl?1
+R13
+33
+b1
+R14
+!i10b 1
+R15
+Z31 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float/package.vhd|
+Z32 !s107 /home/arash/Desktop/final_project/fft-float/package.vhd|
+!i113 1
+R18
+R19
+Bbody
+R1
+R2
+R26
+R4
+R5
+R27
+R7
+R8
+R9
+l0
+L47
+VT1dH95[i<[AQcEBB23U<g2
+!s100 9RdBCmV0>S<1G8:cd>O>L0
+R13
+33
+R14
+!i10b 1
+R15
+R31
+R32
+!i113 1
+R18
+R19
+Etestbench
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z33 8/home/arash/Desktop/final_project/fft-float/testbench.vhd
+Z34 F/home/arash/Desktop/final_project/fft-float/testbench.vhd
+l0
+L8
+Vid8<b6^4DZdiD2gKJXln=2
+!s100 Te2OZP@?nciR1DU5OXG693
+R13
+33
+R14
+!i10b 1
+R15
+Z35 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float/testbench.vhd|
+Z36 !s107 /home/arash/Desktop/final_project/fft-float/testbench.vhd|
+!i113 1
+R18
+R19
+Atb
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+Z37 DEx4 work 9 testbench 0 22 id8<b6^4DZdiD2gKJXln=2
+l17
+L12
+Z38 VU2WN>ocI9S`KaX3Q`:B@?3
+Z39 !s100 F4g67=o05k9ldgBnZ9X:D3
+R13
+33
+R14
+!i10b 1
+R15
+R35
+R36
+!i113 1
+R18
+R19

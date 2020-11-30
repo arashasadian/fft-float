@@ -1,0 +1,4341 @@
+# reading /home/arash/intelFPGA/19.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project fft_project
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:58:03 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: elapsed clock cycles : 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 1
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 2
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 4
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 5
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 6
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 7
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 8
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: elapsed clock cycles : 9
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 10
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 11
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 12
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 13
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: elapsed clock cycles : 14
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 15
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 16
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 17
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 18
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: elapsed clock cycles : 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 1
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 2
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 4
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: elapsed clock cycles : 5
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 6
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 7
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 8
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 9
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: elapsed clock cycles : 10
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 11
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 12
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 13
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 14
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: elapsed clock cycles : 15
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 16
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 17
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 18
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: elapsed clock cycles : 0
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 1
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 2
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 4
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: elapsed clock cycles : 5
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 6
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 7
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 8
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: elapsed clock cycles : 9
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+add wave -position insertpoint  \
+sim:/testbench/dut/middle_real \
+sim:/testbench/dut/middle_real(7) \
+sim:/testbench/dut/middle_real(6) \
+sim:/testbench/dut/middle_real(5) \
+sim:/testbench/dut/middle_real(4) \
+sim:/testbench/dut/middle_real(3) \
+sim:/testbench/dut/middle_real(2) \
+sim:/testbench/dut/middle_real(1) \
+sim:/testbench/dut/middle_real(0)
+add wave -position insertpoint  \
+sim:/testbench/dut/input_array_real
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Fatal: (vsim-3734) Index value 8 is out of range 7 downto 0.
+#    Time: 170 ns  Iteration: 0  Process: /testbench/dut/main_process File: /home/arash/Desktop/final_project/fft-float/fft.vhd
+# Fatal error in Process main_process at /home/arash/Desktop/final_project/fft-float/fft.vhd line 53
+# 
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 53 Process main_process
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 53 Process main_process
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 53 Process main_process
+# 
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Note: init i  : 8
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+# ** Fatal: (vsim-3734) Index value 8 is out of range 7 downto 0.
+#    Time: 30 ns  Iteration: 0  Process: /testbench/dut/main_process File: /home/arash/Desktop/final_project/fft-float/fft.vhd
+# Fatal error in Process main_process at /home/arash/Desktop/final_project/fft-float/fft.vhd line 52
+# 
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 52 Process main_process
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 52 Process main_process
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/arash/Desktop/final_project/fft-float/fft.vhd 52 Process main_process
+# 
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Note: init i  : 6
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+# ** Note: init i  : 5
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 1
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 0
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : -1
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 6
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 1
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 0
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : -1
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+add wave -position insertpoint  \
+sim:/testbench/dut/middle_imag
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 6
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 1
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 0
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : -1
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 20
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd failed with 3 errors.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 20
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd failed with 3 errors.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last i  : 8
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 8
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 8
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last i  : 8
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 440 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 440 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 460 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 460 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 480 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 480 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 500 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 500 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 520 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 520 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 540 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 540 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 560 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 560 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 580 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 580 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 600 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 600 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 620 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 620 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 640 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 640 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 660 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 660 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 680 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 680 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 700 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 700 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 720 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 720 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 740 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 740 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 8
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last i  : 8
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last i  : 8
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 0
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+add wave -position insertpoint  \
+sim:/testbench/output_real \
+sim:/testbench/output_imag
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd failed with 19 errors.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 1 failed with 19 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+restart
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 0
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+restart
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: init i  : 1
+#    Time: 10 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 2
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 3
+#    Time: 50 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 4
+#    Time: 70 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 5
+#    Time: 90 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 6
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 7
+#    Time: 130 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: init i  : 8
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+add wave -position insertpoint \
+/testbench/dut/main_process/index 
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd failed with 15 errors.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 1 failed with 15 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd failed with 14 errors.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 1 failed with 14 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+quit -sim
+# End time: 16:08:41 on Nov 30,2020, Elapsed time: 1:10:38
+# Errors: 8, Warnings: 385
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 16:08:51 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: j  : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: j  : 1
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 1
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 2
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 2
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 3
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 2
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 2
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 4
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 0
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 250 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+add wave -position insertpoint \
+/testbench/dut/main_process/i 
+run
+run
+run
+run
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last_index   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 2
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 4
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 6
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: last_index   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft.vhd was successful with warnings.
+# Compile of testbench.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+run
+# ** Note: last_index   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 6
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 4
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 340 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 350 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 4
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 2
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 6
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 4
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 1
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+restart
+# Loading work.fftpackage(body)
+# Loading work.testbench(tb)
+# Loading work.fft(arch)
+# Loading work.butterfly(butterfly_arch)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: last_index   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 4
+#    Time: 170 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 2
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 4
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 210 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 6
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 0
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 3
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+# ** Note: last_index   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 2
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 2
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 4
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 6
+#    Time: 290 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 4
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 1
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: last_index   : 6
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 1
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 5
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 330 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+# ** Note: in1_t   : 5
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 7
+#    Time: 360 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 0
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 0
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 1
+#    Time: 370 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 0
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 4
+#    Time: 380 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 2
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 3
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 2
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 6
+#    Time: 400 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 4
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 4
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 5
+#    Time: 410 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 1
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 5
+#    Time: 420 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: last_index   : 6
+#    Time: 430 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: i   : 2
+#    Time: 430 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in1   : 6
+#    Time: 430 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2   : 7
+#    Time: 430 ns  Iteration: 0  Instance: /testbench/dut
+run
+# ** Note: in1_t   : 3
+#    Time: 440 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 7
+#    Time: 440 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+# ** Note: in1_t   : 3
+#    Time: 460 ns  Iteration: 0  Instance: /testbench/dut
+# ** Note: in2_t   : 7
+#    Time: 460 ns  Iteration: 0  Instance: /testbench/dut
+run
+run
+run
+run
+run
+run

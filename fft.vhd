@@ -19,176 +19,114 @@ entity fft is
   ) ;
 end fft;
 
-architecture arch of fft is
-    signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : float32;
-    signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : float32;
-    signal bt_coef_imag, bt_coef_real : float32;
-    signal middle_real, middle_imag : array_of_float32(N - 1 downto 0);
-    signal middle2_real, middle2_imag : array_of_float32(N - 1 downto 0);
-
-    
-
-    signal middle_done : std_logic := '0';
-    signal input_split_done : std_logic := '0';
-    signal final_done : std_logic := '0';
-
-    begin
+architecture arch of fft is 
+  signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : float32;
+  signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : float32;
+  signal bt_coef_imag, bt_coef_real : float32;
+  signal middle_real, middle_imag : array_of_float32(N - 1 downto 0);
+  signal final_done, init_done, last_level : std_logic := '0';
+  signal current_step : integer := 0;
+  signal clk_cycles : integer := 0;
+  begin
     butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
-        bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
-
-    calculate_bt_inputs : process( clk)
-    variable last_index_done : integer := 0;
-    variable flag : integer := 0;
-    variable bt_k : integer;
-    variable i : integer := 0;
-
-    variable index : std_logic_vector(step-1 downto 0) := "000";
-    variable in1   : std_logic_vector(step-1 downto 0) := "000";
-    variable in2   : std_logic_vector(step-1 downto 0) := "000";
-    variable in1_temp   : std_logic_vector(step-1 downto 0) := "000";
-    variable in2_temp   : std_logic_vector(step-1 downto 0) := "000";
-
-    begin
-      if rising_edge(clk) then
-        if input_split_done = '0' then
-          if last_index_done <  7 then
-
-            in1 := index(0) & index(step-1 downto 1);
-            index := std_logic_vector(unsigned(index)+1);
-            in2 := index(0) & index(step-1 downto 1);
-            index := std_logic_vector(unsigned(index)+1);
-
-            bt_in1_real <= input_array_real(to_integer(unsigned(in1)));
-            bt_in1_imag <= input_array_imag(to_integer(unsigned(in1)));
-            bt_in2_real <= input_array_real(to_integer(unsigned(in2)));
-            bt_in2_imag <= input_array_imag(to_integer(unsigned(in2)));
-
-            bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
-            when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-                
-            bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
-            when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-            
-            report "1.The value of 'in1' is " & integer'image(to_integer(unsigned(in1)));
-            report "2.The value of 'in2 is" & integer'image(to_integer(unsigned(in2)));
-
-            
-          else
-            input_split_done <= '1';
-            last_index_done := 0;
-            index := "000";
-            flag := 1;
-          end if;
-      elsif input_split_done = '1' and middle_done = '0'then
-          if last_index_done < 8 then
-            flag := 0;
-            
-            in1 := index(1) & index(0) & index(step-1 downto 2);
-            index := std_logic_vector(unsigned(index)+1);
-            in2 := index(1) & index(0) & index(step-1 downto 2);
-            index := std_logic_vector(unsigned(index)+1);
-
-            
-            
-            bt_in1_real <= middle_real(to_integer(unsigned(in1)));
-            bt_in1_imag <= middle_imag(to_integer(unsigned(in1)));
-            bt_in2_real <= middle_real(to_integer(unsigned(in2)));
-            bt_in2_imag <= middle_imag(to_integer(unsigned(in2)));
-
-            report "3.The value of 'in1' is " & integer'image(to_integer(unsigned(in1)));
-            report "4.The value of 'in2 is" & integer'image(to_integer(unsigned(in2)));
+      bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
     
-            if to_integer(unsigned(in1)) mod 2 = 0 then
-              bt_coef_real <= to_float(1);
-              bt_coef_imag <= to_float(0);
-                  
+      main_process : process( clk )
+      variable i : integer := 0;
+      variable j : integer := 0;
+      variable ii : integer := 0;
+      variable last_index_done : integer := 0;
+      variable index : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable index2 : std_logic_vector(step-1 downto 0) := (0 => '1', others => '0');
+      variable in1   : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable in2   : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable in1_temp   : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable in2_temp   : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable temp_index : std_logic_vector(step-1 downto 0) := (others => '0');
+      variable init_i : integer := 0;
+      begin
+        if rising_edge(clk) and done /= '1' then 
+           clk_cycles <= clk_cycles + 1;
+          --  report "elapsed clock cycles : " & integer'image(clk_cycles);
+          if init_done = '0' then
+            if init_i < N then
+              middle_real(init_i) <= input_array_real(init_i);
+              middle_imag(init_i) <= input_array_imag(init_i);
+              init_i := init_i + 1;
+              --report "init i  : " & integer'image(init_i);
+            end if;
+          else
+            if (i < step) then
+              if (last_index_done < N ) then
+                 report "last_index   : " & integer'image(last_index_done);
+                 report "i   : " & integer'image(i);
+                  in1 := index(0) & index(step-1 downto 1);
+                  index  := std_logic_vector(unsigned(index)+1);
+                  in2 := index(0) & index(step-1 downto 1);
+                  index  := std_logic_vector(unsigned(index)+1);
+                for j in 0 to current_step - 1 loop
+                  in1 := in1(0) & in1(step-1 downto 1);
+                  in2 := in2(0) & in2(step-1 downto 1);
+                end loop;
+                
+                report "in1   : " & integer'image(to_integer(unsigned(in1)));
+                report "in2   : " & integer'image(to_integer(unsigned(in2)));
+                
+                bt_in1_real <= middle_real(to_integer(unsigned(in1)));
+                bt_in1_imag <= middle_imag(to_integer(unsigned(in1)));
+                bt_in2_real <= middle_real(to_integer(unsigned(in2)));
+                bt_in2_imag <= middle_imag(to_integer(unsigned(in2)));
+
+                bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
+                when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+                    
+                bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
+                when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+              else
+              --report "last i  : " & integer'image(last_index_done);
+                last_index_done := -2     ;
+                i := i + 1;  
+                index := (others => '0');
+                current_step <= current_step + 1; 
+                last_level <= '1' when i = step-1  else last_level;
+              end if;
             else
-              bt_coef_real <= to_float(0);
-              bt_coef_imag <= to_float(-1);
+              final_done <= '1';
+            end if;
+          end if;
+          else if done /= '1' then
+            if init_done /= '0' then
+              if last_level /= '1' then
+                middle_real((to_integer(unsigned(in1)))) <= bt_out1_real;
+                middle_imag((to_integer(unsigned(in1)))) <= bt_out1_imag;
+                middle_real((to_integer(unsigned(in2)))) <= bt_out2_real;
+                middle_imag((to_integer(unsigned(in2)))) <= bt_out2_imag;
+              else
+                for i in 0 to step-1 loop
+                  in1_temp(step - 1 - i) := in1(i);
+                  in2_temp(step - 1 - i) := in2(i);
+                end loop;
+                -- in1_temp(step - 1 downto 0) := in1;
+                -- in2_temp(step - 1 downto 0) := in2;
+                report "in1_t   : " & integer'image(to_integer(unsigned(in1_temp)));
+                report "in2_t   : " & integer'image(to_integer(unsigned(in2_temp)));
+                output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
+                output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
+                output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
+                output_array_imag(to_integer(unsigned(in2_temp))) <= bt_out2_imag;
+              end if;
+              last_index_done := last_index_done + 2;
+            else
+              
+              init_done <= '1' when init_i = N;
+
             end if;
             
-          else
-            middle_done <= '1';
-            last_index_done := 0;
-            flag := 1;
-            index := "000";
+            end if;        
           end if;
-      elsif (input_split_done = '1' and middle_done ='1' and final_done = '0') then
-        if last_index_done <  8 then
-          flag := 0;
+  end process ; -- main_process        
 
-          in1 := index(2) & index(1) & index(0);
-          index := std_logic_vector(unsigned(index)+1);
-          in2 := index(2) & index(1) & index(0);
-          index := std_logic_vector(unsigned(index)+1);
-
-            
-
-          report "5.The value of 'in1' is " & integer'image(to_integer(unsigned(in1)));
-          report "6.The value of 'in2 is" & integer'image(to_integer(unsigned(in2)));
-
-          bt_in1_real <= middle2_real(to_integer(unsigned(in1)));
-          bt_in1_imag <= middle2_imag(to_integer(unsigned(in1)));
-          bt_in2_real <= middle2_real(to_integer(unsigned(in2)));
-          bt_in2_imag <= middle2_imag(to_integer(unsigned(in2)));
-    
-          --  bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
-          --     when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-                
-          -- bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
-          --     when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-          bt_coef_real <= to_float(1);
-          bt_coef_imag <= to_float(0);
-          
-        else
-          final_done <= '1';
-          last_index_done := 0;
-          flag := 1;
-        end if;
-      end if;
-      elsif falling_edge(clk) then
-        if input_split_done = '0' then
-          if last_index_done < 7 then
-            middle_real(to_integer(unsigned(in1))) <= bt_out1_real;
-            middle_imag(to_integer(unsigned(in1))) <= bt_out1_imag;
-            middle_real(to_integer(unsigned(in2))) <= bt_out2_real;
-            middle_imag(to_integer(unsigned(in2))) <= bt_out2_imag;
-
-            last_index_done := last_index_done + 2;
-            
-          end if;
-        elsif input_split_done = '1' and middle_done = '0' and flag = 0 then
-          if last_index_done < 8 then
-            middle2_real((to_integer(unsigned(in1)))) <= bt_out1_real;
-            middle2_imag((to_integer(unsigned(in1)))) <= bt_out1_imag;
-            middle2_real((to_integer(unsigned(in2)))) <= bt_out2_real;
-            middle2_imag((to_integer(unsigned(in2)))) <= bt_out2_imag;
-            
-            last_index_done := last_index_done + 2;
-          end if;
-        elsif input_split_done = '1' and middle_done = '1' and final_done = '0' and flag = 0 then
-          if last_index_done <  8 then
-              -- DIF calculated in bit reversed order
-
-              for i in 0 to step-1 loop
-                in1_temp(step - 1 - i) := in1(i);
-                in2_temp(step - 1 - i) := in2(i);
-              end loop;
-
-              output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
-              output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
-              output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
-              output_array_imag(to_integer(unsigned(in2_temp))) <= bt_out2_imag;
-
-            
-            last_index_done := last_index_done + 2;
-          end if;
-
-        end if;
-
-      end if;
-  end process ; -- calculate_bt_inputs
-
+  
   done <= final_done;
 
 end architecture arch;
