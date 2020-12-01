@@ -16,24 +16,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity butterfly
 -- Compiling architecture butterfly_arch of butterfly
 
-} {} {}} /home/arash/Desktop/final_project/fft-float/package.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float/package.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package instance float_pkg
--- Loading package NUMERIC_STD
--- Loading package fixed_float_types
--- Loading package float_generic_pkg
--- Loading package fixed_generic_pkg
--- Loading package instance fixed_pkg
--- Loading package MATH_REAL
--- Loading package body fixed_generic_pkg
--- Loading package body float_generic_pkg
--- Compiling package fftpackage
--- Compiling package body fftpackage
--- Loading package fftpackage
-
 } {} {}} /home/arash/Desktop/final_project/fft-float/testbench.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float/testbench.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -51,5 +33,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package fftpackage
 -- Compiling entity testbench
 -- Compiling architecture tb of testbench
+
+} {} {}} /home/arash/Desktop/final_project/fft-float/package.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float/package.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Compiling package fftpackage
+-- Compiling package body fftpackage
+-- Loading package fftpackage
 
 } {} {}}

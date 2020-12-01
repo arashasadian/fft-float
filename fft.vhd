@@ -28,22 +28,25 @@ architecture arch of fft is
   signal current_step : integer := 0;
   signal clk_cycles : integer := 0;
   begin
+
     butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
       bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
     
-      main_process : process( clk )
+    main_process : process( clk )
       variable i : integer := 0;
       variable j : integer := 0;
       variable ii : integer := 0;
       variable last_index_done : integer := 0;
       variable index : std_logic_vector(step-1 downto 0) := (others => '0');
-      variable index2 : std_logic_vector(step-1 downto 0) := (0 => '1', others => '0');
       variable in1   : std_logic_vector(step-1 downto 0) := (others => '0');
       variable in2   : std_logic_vector(step-1 downto 0) := (others => '0');
       variable in1_temp   : std_logic_vector(step-1 downto 0) := (others => '0');
       variable in2_temp   : std_logic_vector(step-1 downto 0) := (others => '0');
       variable temp_index : std_logic_vector(step-1 downto 0) := (others => '0');
       variable init_i : integer := 0;
+      variable degree : integer;
+      variable k : integer := 0;
+      variable two_power : integer := 2;
       begin
         if rising_edge(clk) and done /= '1' then 
            clk_cycles <= clk_cycles + 1;
@@ -58,8 +61,8 @@ architecture arch of fft is
           else
             if (i < step) then
               if (last_index_done < N ) then
-                 report "last_index   : " & integer'image(last_index_done);
-                 report "i   : " & integer'image(i);
+                  --report "last_index   : " & integer'image(last_index_done);
+                  --report "i   : " & integer'image(i);
                   in1 := index(0) & index(step-1 downto 1);
                   index  := std_logic_vector(unsigned(index)+1);
                   in2 := index(0) & index(step-1 downto 1);
@@ -69,26 +72,52 @@ architecture arch of fft is
                   in2 := in2(0) & in2(step-1 downto 1);
                 end loop;
                 
-                report "in1   : " & integer'image(to_integer(unsigned(in1)));
-                report "in2   : " & integer'image(to_integer(unsigned(in2)));
+                -- report "in1   : " & integer'image(to_integer(unsigned(in1)));
+                -- report "in2   : " & integer'image(to_integer(unsigned(in2)));
                 
                 bt_in1_real <= middle_real(to_integer(unsigned(in1)));
                 bt_in1_imag <= middle_imag(to_integer(unsigned(in1)));
                 bt_in2_real <= middle_real(to_integer(unsigned(in2)));
                 bt_in2_imag <= middle_imag(to_integer(unsigned(in2)));
 
-                bt_coef_real <= to_float(1) when to_integer(unsigned(in1)) = 0 else to_float(0.707107)
-                when to_integer(unsigned(in1)) = 1 else to_float(0) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
-                    
-                bt_coef_imag <= to_float(0) when to_integer(unsigned(in1)) = 0 else to_float(-0.707107)
-                when to_integer(unsigned(in1)) = 1 else to_float(-1) when to_integer(unsigned(in1)) = 2 else to_float(-0.707107);
+                -- calculating degree
+                
+                
+                
+                report "in1 = " & integer'image(to_integer(unsigned(in1)));
+                report "in2 = " & integer'image(to_integer(unsigned(in2)));
+
+                -- report "degree = " & integer'image(degree);
+                -- report "2pi - degree = " & integer'image((TwoPI-degree) mod TwoPI);
+                
+                
+
+
+                if k >= N / two_power then
+                  k := 0;
+                end if;
+
+                degree := -1 * k * two_power * TwoPI  /(2* N) ;
+
+                degree := degree mod TwoPI; 
+                report "degree = " & integer'image(degree);
+                -- report "k = " & integer'image(k);
+                -- report "two_power = " & integer'image(two_power);
+                
+                k := k+1;
+                
+                bt_coef_real <= cos_rom(degree);             
+                bt_coef_imag <= sin_rom(degree);
               else
               --report "last i  : " & integer'image(last_index_done);
+                report "==================================";
                 last_index_done := -2     ;
                 i := i + 1;  
                 index := (others => '0');
                 current_step <= current_step + 1; 
                 last_level <= '1' when i = step-1  else last_level;
+                k := 0;
+                two_power := 2 * two_power;
               end if;
             else
               final_done <= '1';
@@ -108,8 +137,8 @@ architecture arch of fft is
                 end loop;
                 -- in1_temp(step - 1 downto 0) := in1;
                 -- in2_temp(step - 1 downto 0) := in2;
-                report "in1_t   : " & integer'image(to_integer(unsigned(in1_temp)));
-                report "in2_t   : " & integer'image(to_integer(unsigned(in2_temp)));
+                -- report "in1_t   : " & integer'image(to_integer(unsigned(in1_temp)));
+                -- report "in2_t   : " & integer'image(to_integer(unsigned(in2_temp)));
                 output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
                 output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
                 output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
@@ -124,7 +153,7 @@ architecture arch of fft is
             
             end if;        
           end if;
-  end process ; -- main_process        
+    end process ; -- main_process        
 
   
   done <= final_done;

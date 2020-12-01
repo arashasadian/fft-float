@@ -6,6 +6,8 @@ use ieee.float_pkg.all;
 package fftpackage is
     type array_of_float32 is array(natural range <>) of float32;
     type array_of_integer is array(natural range <>) of integer;
+    constant PI : integer := 180;
+    constant TwoPI : integer := 360;
     component butterfly is
         port (
           clk : in std_logic;
@@ -23,7 +25,7 @@ package fftpackage is
       end component butterfly;
 
       component fft is
-        generic ( N : integer := 8);
+        generic ( N : integer := 8; step : integer := 3);
         port (
           clk : in std_logic;
           input_array_real : in array_of_float32(N - 1 downto 0);
@@ -38,48 +40,14 @@ package fftpackage is
     signal input_index_rom : array_of_integer(7 downto 0);
     signal sin_rom, cos_rom : array_of_float32(360 downto 0);
 
-    procedure index_rom_generator (signal enable : in std_logic; 
-    signal input_index, mid_index, final_index : inout array_of_integer(7 downto 0));
-
+    procedure trigonometrics_rom_generator (
+      signal enable : in std_logic ;
+      signal s_rom, c_rom : inout array_of_float32(360 downto 0));   
 
 end package fftpackage;
 
 package body fftpackage is 
-  procedure index_rom_generator (signal enable : in std_logic; 
-    signal input_index, mid_index, final_index : inout array_of_integer(7 downto 0)) is
-    begin
-        if rising_edge(enable) then
-          input_index(0) <= 0;
-          input_index(1) <= 4;
-          input_index(2) <= 2;
-          input_index(3) <= 6;
-          input_index(4) <= 1;
-          input_index(5) <= 5;
-          input_index(6) <= 3;
-          input_index(7) <= 7;
-
-          mid_index(0) <= 0;
-          mid_index(1) <= 2;
-          mid_index(2) <= 1;
-          mid_index(3) <= 3;
-          mid_index(4) <= 4;
-          mid_index(5) <= 6;
-          mid_index(6) <= 5;
-          mid_index(7) <= 7;
-
-
-          final_index(0) <= 0;
-          final_index(1) <= 4;
-          final_index(2) <= 1;
-          final_index(3) <= 5;
-          final_index(4) <= 2;
-          final_index(5) <= 6;
-          final_index(6) <= 3;
-          final_index(7) <= 7;
-
-        end if;
-  end procedure index_rom_generator;
-
+  
 
 
   procedure trigonometrics_rom_generator (
