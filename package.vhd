@@ -6,8 +6,27 @@ use ieee.float_pkg.all;
 package fftpackage is
     type array_of_float32 is array(natural range <>) of float32;
     type array_of_integer is array(natural range <>) of integer;
+    type array_2d_float is array(natural range <>) of array_of_float32;
+    type fft_state is (RESET_STATE, IDLE, INIT, INIT2, BUSY1, BUSY2);
+    type fft2d_state is (IDLE, TRANSPOSE ,FFT1_RESET, FAKE1, FFT1, FFT1_P, TRANSPOSE1, FFT2_RESET,FAKE, FFT2, FFT2_P);
     constant PI : integer := 180;
     constant TwoPI : integer := 360;
+    constant ROWS, COLS : integer := 4;
+    constant STEP : integer := 2;
+
+    component transpose_matrix is
+      generic ( ROWS : integer; COLS : integer );
+      port (
+        enable : in std_logic;
+        buffer_real_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        buffer_imag_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        buffer_real_out : out array_2d_float(COLS-1 downto 0)(ROWS-1 downto 0);
+        buffer_imag_out : out array_2d_float(COLS-1 downto 0)(ROWS-1 downto 0)
+      ) ;
+    end component transpose_matrix;
+
+
+
     component butterfly is
         port (
           clk : in std_logic;
@@ -25,9 +44,10 @@ package fftpackage is
       end component butterfly;
 
       component fft is
-        generic ( N : integer := 8; step : integer := 3);
+        generic ( N : integer ; step : integer );
         port (
           clk : in std_logic;
+          reset : in std_logic;
           input_array_real : in array_of_float32(N - 1 downto 0);
           input_array_imag : in array_of_float32(N - 1 downto 0);
           output_array_real : out array_of_float32(N - 1 downto 0);
@@ -35,19 +55,58 @@ package fftpackage is
           done : out std_logic
         ) ;
       end component fft;
+
+      component fft_top is
+        generic ( ROWS : integer ; COLS : integer );
+        port (
+          clk : in std_logic;
+          reset : in std_logic;
+          enable : in std_logic;
+          buffer_real_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_imag_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_real_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_imag_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          done : out std_logic
+        ) ;
+    end component fft_top;
+    component fft2d is
+      generic ( ROWS : integer ; COLS : integer);
+      port (
+        clk : in std_logic;
+        reset : in std_logic;
+        enable : in std_logic;
+        input_array_real : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        input_array_imag : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        output_array_real : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        output_array_imag : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        done : out std_logic
+      ) ;
+    end component fft2d;
     signal middle_index_rom : array_of_integer(7 downto 0);
     signal output_index_rom : array_of_integer(7 downto 0);
     signal input_index_rom : array_of_integer(7 downto 0);
     signal sin_rom, cos_rom : array_of_float32(360 downto 0);
-
+    signal buffer_2d_real, buffer_2d_imag : array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
     procedure trigonometrics_rom_generator (
       signal enable : in std_logic ;
       signal s_rom, c_rom : inout array_of_float32(360 downto 0));   
+      procedure buffer_init(reset : in std_logic; signal re, im : inout array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0));
 
 end package fftpackage;
 
 package body fftpackage is 
   
+  procedure buffer_init(reset : in std_logic; signal re, im : inout array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0))
+      is begin
+        for i in 0 to ROWS-1 loop
+          for j in 0 to COLS -1 loop
+              re(i)(j) <= to_float(i * j);
+              im(i)(j) <= to_float(i - j);
+              report "i = " & integer'image(i);
+              report "j = " & integer'image(j);
+          end loop;
+      end loop;
+  end procedure;
 
 
   procedure trigonometrics_rom_generator (

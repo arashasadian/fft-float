@@ -11,40 +11,132 @@ end entity;
 
 architecture tb of testbench is
 
-    signal clk, done, enable : std_logic := '0';
-    signal input_real, input_imag, output_real, output_imag : array_of_float32(15 downto 0);
+    signal clk, done, reset : std_logic := '0';
+    signal input_real, input_imag, output_real, output_imag : array_of_float32(7 downto 0);
+
+
+    -- begin
+    --     dut : fft2d port map(clk, reset, done);
+    --     clk <= not(clk) after 10 ns;
+    --     reset <= '1', '0' after 50 ns;
+    --     trigonometrics_rom_generator (reset, sin_rom, cos_rom);  
+    --     --buffer_init(reset, buffer_2d_real, buffer_2d_imag);
+    -- test2 : process 
+    -- begin
+    --     if reset = '1' then
+    --         for i in 0 to ROWS-1 loop
+    --             for j in 0 to COLS -1 loop
+    --                 buffer_2d_real(i)(j) <= to_float(i * j);
+    --                 buffer_2d_imag(i)(j) <= to_float(i - j);
+    --                 report "i = " & integer'image(i);
+    --                 report "j = " & integer'image(j);
+    --             end loop;
+    --         end loop;
+    --     end if;
+    --     wait on clk;
+
+    -- end process ; -- test2
 
 begin
-    dut : fft generic map (16,4) 
-            port map (clk, input_real, input_imag, output_real, output_imag, done);
+    dut : fft generic map (8,3) 
+            port map (clk, reset, input_real, input_imag, output_real, output_imag, done);
     clk <= not(clk) after 10 ns;
-    enable <= '1' after 2 ns;
-    trigonometrics_rom_generator (enable, sin_rom, cos_rom);  
+    
+    trigonometrics_rom_generator (reset, sin_rom, cos_rom);  
     test : process
         begin
-            input_real(15) <= to_float(2);
-            input_imag(15) <= to_float(1);
+            -- input_real(15) <= to_float(2);
+            -- input_imag(15) <= to_float(1);
 
-            input_real(14) <= to_float(3);
-            input_imag(14) <= to_float(2);
+            -- input_real(14) <= to_float(3);
+            -- input_imag(14) <= to_float(2);
             
-            input_real(13) <= to_float(4);
-            input_imag(13) <= to_float(3);
+            -- input_real(13) <= to_float(4);
+            -- input_imag(13) <= to_float(3);
             
-            input_real(12) <= to_float(5);
-            input_imag(12) <= to_float(4);
+            -- input_real(12) <= to_float(5);
+            -- input_imag(12) <= to_float(4);
             
-            input_real(11) <= to_float(6);
-            input_imag(11) <= to_float(5);
+            -- input_real(11) <= to_float(6);
+            -- input_imag(11) <= to_float(5);
             
-            input_real(10) <= to_float(7);
-            input_imag(10) <= to_float(6);
+            -- input_real(10) <= to_float(7);
+            -- input_imag(10) <= to_float(6);
             
-            input_real(9) <= to_float(8);
-            input_imag(9) <= to_float(7);
+            -- input_real(9) <= to_float(8);
+            -- input_imag(9) <= to_float(7);
             
-            input_real(8) <= to_float(9);
-            input_imag(8) <= to_float(8);
+            -- input_real(8) <= to_float(9);
+            -- input_imag(8) <= to_float(8);
+            reset <= '1';
+            wait on clk;
+            reset <= '0';
+
+            input_real(7) <= to_float(-2);
+            input_imag(7) <= to_float(1);
+
+            input_real(6) <= to_float(-3);
+            input_imag(6) <= to_float(2);
+            
+            input_real(5) <= to_float(-4);
+            input_imag(5) <= to_float(3);
+            
+            input_real(4) <= to_float(-5);
+            input_imag(4) <= to_float(4);
+            
+            input_real(3) <= to_float(-6);
+            input_imag(3) <= to_float(5);
+            
+            input_real(2) <= to_float(-7);
+            input_imag(2) <= to_float(6);
+            
+            input_real(1) <= to_float(-8);
+            input_imag(1) <= to_float(7);
+            
+            input_real(0) <= to_float(-9);
+            input_imag(0) <= to_float(8);
+
+            wait on clk until done = '1';
+            report "done";
+            wait for 20 ns;
+
+            input_real(7) <= to_float(0);
+            input_imag(7) <= to_float(0);
+
+            input_real(6) <= to_float(0);
+            input_imag(6) <= to_float(0);
+            
+            input_real(5) <= to_float(0);
+            input_imag(5) <= to_float(0);
+            
+            input_real(4) <= to_float(0);
+            input_imag(4) <= to_float(0);
+            
+            input_real(3) <= to_float(0);
+            input_imag(3) <= to_float(0);
+            
+            input_real(2) <= to_float(0);
+            input_imag(2) <= to_float(0);
+            
+            input_real(1) <= to_float(0);
+            input_imag(1) <= to_float(0);
+            
+            input_real(0) <= to_float(0);
+            input_imag(0) <= to_float(0);
+            
+
+            reset <= '1';
+            wait on clk;
+            reset <= '0';
+
+
+            wait on clk until done = '1';
+            report "done2";
+            wait for 20 ns;
+
+            reset <= '1';
+            wait on clk;
+            reset <= '0';
 
             input_real(7) <= to_float(2);
             input_imag(7) <= to_float(1);
@@ -69,7 +161,9 @@ begin
             
             input_real(0) <= to_float(9);
             input_imag(0) <= to_float(8);
-            wait for 20 ns;
+            wait on clk until done = '1';
+            report "done3";
+            wait;
         end process ; -- test
         
 
