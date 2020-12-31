@@ -48,10 +48,11 @@ architecture arch of fft is
       variable two_power : integer := 2;
 
       variable base_index : integer := 0;
-      variable marked : std_logic_vector(N-1 downto 0);
+      variable marked : std_logic_vector(N-1 downto 0) := (others => '0');
       begin
         if rising_edge(clk) then
           if reset = '1' then
+            marked := (others=>'0');
             final_done <= '0';
             init_done <= '0';
             last_index_done := 0;
@@ -110,14 +111,22 @@ architecture arch of fft is
                 in2 := std_logic_vector(to_unsigned(base_index + N/two_power,in2'length));
                 marked(to_integer(unsigned(in2))) := '1';
                 
-                while marked(base_index) = '1' loop
-                  base_index := base_index + 1;
-                  if base_index > N - 1 then
+                -- while marked(base_index) = '1' loop
+                --   base_index := base_index + 1;
+                --   if base_index > N - 1 then
+                --     exit;
+                --   end if;
+                -- end loop; 
+                for i in 0 to N-1 loop
+                  report "i : " & integer'image(i);
+                  report"marked :" & std_logic'image(marked(i)) ;
+                  if marked(i) = '0' then
+                    base_index := i;
                     exit;
                   end if;
-                end loop; 
+                end loop;
 
-                --report "in1   : " & integer'image(to_integer(unsigned(in1)));
+                
                 --report "in2   : " & integer'image(to_integer(unsigned(in2)));
                 
                 bt_in1_real <= middle_real(to_integer(unsigned(in1)));
