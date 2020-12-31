@@ -73,15 +73,38 @@ architecture arch of fft is
               middle_real(init_i) <= input_array_real(init_i);
               middle_imag(init_i) <= input_array_imag(init_i);
               init_i := init_i + 1;
+              init_done <= '1' when init_i = N;
             end if;
-
-          else
+          else if done /= '1' then -- falling edge responsibilty
+            if init_done /= '0' then
+              if last_level /= '1' then
+                middle_real((to_integer(unsigned(in1)))) <= bt_out1_real;
+                middle_imag((to_integer(unsigned(in1)))) <= bt_out1_imag;
+                middle_real((to_integer(unsigned(in2)))) <= bt_out2_real;
+                middle_imag((to_integer(unsigned(in2)))) <= bt_out2_imag;
+              else
+                for i in 0 to step-1 loop
+                  in1_temp(step - 1 - i) := in1(i);
+                  in2_temp(step - 1 - i) := in2(i);
+                end loop;
+                -- in1_temp(step - 1 downto 0) := in1;
+                -- in2_temp(step - 1 downto 0) := in2;
+                -- report "in1_t   : " & integer'image(to_integer(unsigned(in1_temp)));
+                -- report "in2_t   : " & integer'image(to_integer(unsigned(in2_temp)));
+                output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
+                output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
+                output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
+                output_array_imag(to_integer(unsigned(in2_temp))) <= bt_out2_imag;
+              end if;
+              last_index_done := last_index_done + 2;
+            end if;
+            
             if (i < step) then
 
-              if (last_index_done < N ) then
+              if (last_index_done <= N ) then
                 
-                --report "base_index   : " & integer'image(base_index);
-
+                report "base_index   : " & integer'image(base_index);
+                
                 in1 := std_logic_vector(to_unsigned(base_index, in1'length));
                 marked(base_index) := '1';
                 in2 := std_logic_vector(to_unsigned(base_index + N/two_power,in2'length));
@@ -134,7 +157,7 @@ architecture arch of fft is
               else
               --report "last i  : " & integer'image(last_index_done);
                 -- report "==================================";
-                last_index_done := -2     ;
+                last_index_done := 0;
                 i := i + 1;  
                 index := (others => '0');
                 current_step := current_step + 1; 
@@ -147,37 +170,9 @@ architecture arch of fft is
             else
               final_done <= '1';
             end if;
-          end if;
-          else if done /= '1' then
-            if init_done /= '0' then
-              if last_level /= '1' then
-                middle_real((to_integer(unsigned(in1)))) <= bt_out1_real;
-                middle_imag((to_integer(unsigned(in1)))) <= bt_out1_imag;
-                middle_real((to_integer(unsigned(in2)))) <= bt_out2_real;
-                middle_imag((to_integer(unsigned(in2)))) <= bt_out2_imag;
-              else
-                for i in 0 to step-1 loop
-                  in1_temp(step - 1 - i) := in1(i);
-                  in2_temp(step - 1 - i) := in2(i);
-                end loop;
-                -- in1_temp(step - 1 downto 0) := in1;
-                -- in2_temp(step - 1 downto 0) := in2;
-                -- report "in1_t   : " & integer'image(to_integer(unsigned(in1_temp)));
-                -- report "in2_t   : " & integer'image(to_integer(unsigned(in2_temp)));
-                output_array_real(to_integer(unsigned(in1_temp))) <= bt_out1_real;
-                output_array_imag(to_integer(unsigned(in1_temp))) <= bt_out1_imag;
-                output_array_real(to_integer(unsigned(in2_temp))) <= bt_out2_real;
-                output_array_imag(to_integer(unsigned(in2_temp))) <= bt_out2_imag;
-              end if;
-              last_index_done := last_index_done + 2;
-            else
-              
-              init_done <= '1' when init_i = N;
-
-            end if;
-            
-            end if;        
-          end if;
+          end if;       
+        end if;
+      end if;
     end process ; -- main_process        
 
   
