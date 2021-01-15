@@ -7,11 +7,11 @@ use ieee.numeric_std.all;
 use std.textio.all;
 
 
-entity fft2_tb is
+entity ifft2_tb is
 end entity;
 
 
-architecture a of fft2_tb is
+architecture a of ifft2_tb is
 
     signal clk, reset, enable : std_logic := '0';
     signal done : std_logic := '0';
@@ -20,7 +20,7 @@ architecture a of fft2_tb is
     begin
         clk <= not(clk) after 10 ns;
         trigonometrics_rom_generator (reset, sin_rom, cos_rom);
-        dut : fft2d generic map(ROWS, COLS) port map(clk, reset, enable, re, im, re_o, im_o, done);
+        dut : ifft2d generic map(ROWS, COLS) port map(clk, reset, enable, re, im, re_o, im_o, done);
     test2 : process 
         file infile          : text is in "image_in.txt";
         variable row         : line;

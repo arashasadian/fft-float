@@ -1,0 +1,164 @@
+/home/arash/Desktop/final_project/fft-float-synthesis/ifft_tb.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/ifft_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity tb
+-- Compiling architecture aa of tb
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/fft2d.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/fft2d.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity fft2d
+-- Compiling architecture arch of fft2d
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/fft_top.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/fft_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity fft_top
+-- Compiling architecture arch of fft_top
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/transpose_unit.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/transpose_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity transpose_matrix
+-- Compiling architecture arch of transpose_matrix
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/ifft_top.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/ifft_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity ifft_top
+-- Compiling architecture arch of ifft_top
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/fft.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/fft.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity fft
+-- Compiling architecture arch of fft
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/ifft.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/ifft.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity ifft
+-- Compiling architecture arch of ifft
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/butterfly.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/butterfly.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity butterfly
+-- Compiling architecture butterfly_arch of butterfly
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-synthesis/fft2d_testbench.vhd {2 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-synthesis/fft2d_testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package instance float_pkg
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package float_generic_pkg
+-- Loading package fixed_generic_pkg
+-- Loading package instance fixed_pkg
+-- Loading package MATH_REAL
+-- Loading package body fixed_generic_pkg
+-- Loading package body float_generic_pkg
+-- Loading package fftpackage
+-- Compiling entity fft2_tb
+-- Compiling architecture a of fft2_tb
+** Warning: /home/arash/Desktop/final_project/fft-float-synthesis/fft2d_testbench.vhd(25): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}}

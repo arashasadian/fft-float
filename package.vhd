@@ -13,7 +13,7 @@ package fftpackage is
     constant TwoPI : integer := 360;
     constant ROWS, COLS : integer := 4;
     constant STEP : integer := 2;
-
+    constant THRESHOLD : float32 := to_float(100);
     component transpose_matrix is
       generic ( ROWS : integer; COLS : integer );
       port (
@@ -25,7 +25,16 @@ package fftpackage is
       ) ;
     end component transpose_matrix;
 
-
+    component filter is
+      generic ( ROWS : integer ; COLS : integer );
+      port (
+        enable : in std_logic;
+        buffer_real_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        buffer_imag_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+        buffer_real_out : out array_2d_float(COLS-1 downto 0)(ROWS-1 downto 0);
+        buffer_imag_out : out array_2d_float(COLS-1 downto 0)(ROWS-1 downto 0)
+      ) ;
+    end component filter;
 
     component butterfly is
         port (
@@ -69,6 +78,49 @@ package fftpackage is
           done : out std_logic
         ) ;
     end component fft_top;
+
+  component ifft2d is
+    generic ( ROWS : integer ; COLS : integer );
+    port (
+      clk : in std_logic;
+      reset : in std_logic;
+      enable : in std_logic;
+      input_array_real : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      input_array_imag : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      output_array_real : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      output_array_imag : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      done : out std_logic
+    ) ;
+  end component ifft2d;
+
+
+    component ifft is
+  generic ( N : integer := 8; step : integer := 3);
+  port (
+    clk : in std_logic;
+    reset : in std_logic;
+    input_array_real : in array_of_float32(N - 1 downto 0);
+    input_array_imag : in array_of_float32(N - 1 downto 0);
+    output_array_real : out array_of_float32(N - 1 downto 0);
+    output_array_imag : out array_of_float32(N - 1 downto 0);
+    done : out std_logic
+  ) ;
+end component ifft;
+
+    component ifft_top is
+        generic ( ROWS : integer ; COLS : integer );
+        port (
+          clk : in std_logic;
+          reset : in std_logic;
+          enable : in std_logic;
+          buffer_real_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_imag_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_real_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          buffer_imag_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+          done : out std_logic
+        ) ;
+      end component ifft_top;
+
     component fft2d is
       generic ( ROWS : integer ; COLS : integer);
       port (
