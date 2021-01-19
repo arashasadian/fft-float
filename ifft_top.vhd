@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.float_pkg.all;
 library work;
 use work.fftpackage.all;
 use ieee.numeric_std.all;
@@ -12,10 +11,10 @@ entity ifft_top is
       clk : in std_logic;
       reset : in std_logic;
       enable : in std_logic;
-      buffer_real_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      buffer_imag_in  : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      buffer_real_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      buffer_imag_out : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      buffer_real_in  : in array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      buffer_imag_in  : in array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      buffer_real_out : out array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      buffer_imag_out : out array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
       done : out std_logic
     ) ;
 end ifft_top;
@@ -25,9 +24,9 @@ architecture arch of ifft_top is
     signal current_state, next_state : fft_state := IDLE;
     signal fft_reset, fft_done : std_logic;
     signal index : integer := 0;
-    signal re_in, im_in, re_out, im_out : array_of_float32(COLS -1 downto 0) := (others => to_float(0));
+    signal re_in, im_in, re_out, im_out : array_of_slv(COLS -1 downto 0);
     begin
-    ifft_module: ifft generic map(ROWS, STEP) port map(clk, fft_reset, re_in, im_in, re_out, im_out, fft_done);
+    fft_module: ifft generic map(ROWS, STEP) port map(clk, fft_reset, re_in, im_in, re_out, im_out, fft_done);
     main_process : process( clk )
     begin
         if reset = '1' then

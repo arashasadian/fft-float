@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.float_pkg.all;
 library work;
 use work.fftpackage.all;
 use ieee.numeric_std.all;
@@ -12,24 +11,24 @@ entity fft is
   port (
     clk : in std_logic;
     reset : in std_logic;
-    input_array_real : in array_of_float32(N - 1 downto 0);
-    input_array_imag : in array_of_float32(N - 1 downto 0);
-    output_array_real : out array_of_float32(N - 1 downto 0);
-    output_array_imag : out array_of_float32(N - 1 downto 0);
+    input_array_real : in array_of_slv(N - 1 downto 0);
+    input_array_imag : in array_of_slv(N - 1 downto 0);
+    output_array_real : out array_of_slv(N - 1 downto 0);
+    output_array_imag : out array_of_slv(N - 1 downto 0);
     done : out std_logic
   ) ;
 end fft;
 
 architecture arch of fft is 
-  signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : float32;
-  signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : float32;
-  signal bt_coef_imag, bt_coef_real : float32;
-  signal middle_real, middle_imag : array_of_float32(N - 1 downto 0);
+  signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : std_logic_vector(bitWidth-1 downto 0);
+  signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : std_logic_vector(bitWidth-1 downto 0);
+  signal bt_coef_imag, bt_coef_real : std_logic_vector(bitWidth-1 downto 0);
+  signal middle_real, middle_imag : array_of_slv(N - 1 downto 0);
   signal final_done, init_done, last_level : std_logic := '0';
   signal clk_cycles : integer := 0;
   begin
 
-    butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
+    butterfly_module : butterfly generic map (bitWidth) port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
       bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
     
     main_process : process( clk, reset )
@@ -104,7 +103,7 @@ architecture arch of fft is
 
               if (last_index_done <= N ) then
                 
-                report "base_index   : " & integer'image(base_index);
+                -- report "base_index   : " & integer'image(base_index);
                 
                 in1 := std_logic_vector(to_unsigned(base_index, in1'length));
                 marked(base_index) := '1';
@@ -118,8 +117,8 @@ architecture arch of fft is
                 --   end if;
                 -- end loop; 
                 for i in 0 to N-1 loop
-                  report "i : " & integer'image(i);
-                  report"marked :" & std_logic'image(marked(i)) ;
+                  -- report "i : " & integer'image(i);
+                  -- report"marked :" & std_logic'image(marked(i)) ;
                   if marked(i) = '0' then
                     base_index := i;
                     exit;

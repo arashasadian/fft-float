@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.float_pkg.all;
 library work;
 use work.fftpackage.all;
 use ieee.numeric_std.all;
@@ -12,24 +11,24 @@ entity ifft is
   port (
     clk : in std_logic;
     reset : in std_logic;
-    input_array_real : in array_of_float32(N - 1 downto 0);
-    input_array_imag : in array_of_float32(N - 1 downto 0);
-    output_array_real : out array_of_float32(N - 1 downto 0);
-    output_array_imag : out array_of_float32(N - 1 downto 0);
+    input_array_real : in array_of_slv(N - 1 downto 0);
+    input_array_imag : in array_of_slv(N - 1 downto 0);
+    output_array_real : out array_of_slv(N - 1 downto 0);
+    output_array_imag : out array_of_slv(N - 1 downto 0);
     done : out std_logic
   ) ;
 end ifft;
 
 architecture arch of ifft is 
-  signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : float32;
-  signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : float32;
-  signal bt_coef_imag, bt_coef_real : float32;
-  signal middle_real, middle_imag : array_of_float32(N - 1 downto 0);
+  signal bt_in1_imag, bt_in1_real, bt_in2_imag, bt_in2_real : std_logic_vector(bitWidth-1 downto 0);
+  signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : std_logic_vector(bitWidth-1 downto 0);
+  signal bt_coef_imag, bt_coef_real : std_logic_vector(bitWidth-1 downto 0);
+  signal middle_real, middle_imag : array_of_slv(N - 1 downto 0);
   signal final_done, init_done, last_level : std_logic := '0';
   signal clk_cycles : integer := 0;
   begin
 
-    butterfly_module : butterfly port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
+    butterfly_module : butterfly generic map (bitWidth) port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
       bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
     
     main_process : process( clk, reset )
@@ -71,8 +70,8 @@ architecture arch of ifft is
           --  report "elapsed clock cycles : " & integer'image(clk_cycles);
           elsif init_done = '0' then
             if init_i < N then
-              middle_real(init_i) <= input_array_real(init_i)/N;
-              middle_imag(init_i) <= input_array_imag(init_i)/N;
+              middle_real(init_i) <= std_logic_vector(resize(signed(input_array_real(init_i)),bitWidth));
+              middle_imag(init_i) <= std_logic_vector(resize(signed(input_array_imag(init_i)),bitWidth));
               init_i := init_i + 1;
               init_done <= '1' when init_i = N;
             end if;
@@ -155,15 +154,14 @@ architecture arch of ifft is
                 degree := -1 * k * two_power * TwoPI  /(2* N) ;
 
                 degree := degree mod TwoPI; 
-                -- report("===================================");
-                -- report "degree = " & integer'image(degree);
+                --report "degree = " & integer'image(degree);
                 -- report "k = " & integer'image(k);
                 -- report "two_power = " & integer'image(two_power);
                 
                 k := k+1;
                 
                 bt_coef_real <= cos_rom(degree);             
-                bt_coef_imag <= -1*sin_rom(degree);
+                bt_coef_imag <= std_logic_vector(resize(signed(sin_rom(degree))*(-1),bitWidth));
               else
               --report "last i  : " & integer'image(last_index_done);
                 -- report "==================================";

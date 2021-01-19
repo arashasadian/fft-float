@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.float_pkg.all;
 library work;
 use work.fftpackage.all;
 use ieee.numeric_std.all;
@@ -11,10 +10,10 @@ entity fft2d is
       clk : in std_logic;
       reset : in std_logic;
       enable : in std_logic;
-      input_array_real : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      input_array_imag : in array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      output_array_real : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-      output_array_imag : out array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+      input_array_real : in array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      input_array_imag : in array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      output_array_real : out array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+      output_array_imag : out array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
       done : out std_logic
     ) ;
 end fft2d;
@@ -23,8 +22,8 @@ architecture arch of fft2d is
 
     signal current_state, next_state : fft2d_state := FFT1_RESET;
 
-    signal fft_real_in, fft_imag_in, fft_real_out, fft_imag_out : array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
-    signal transpose_real_in, transpose_imag_in, transpose_real_out, transpose_imag_out : array_2d_float(ROWS-1 downto 0)(COLS-1 downto 0);
+    signal fft_real_in, fft_imag_in, fft_real_out, fft_imag_out : array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
+    signal transpose_real_in, transpose_imag_in, transpose_real_out, transpose_imag_out : array_2d_slv(ROWS-1 downto 0)(COLS-1 downto 0);
     signal fft_reset, fft_enable, fft_done : std_logic;
 
     signal transpose_enable : std_logic := '0' ;

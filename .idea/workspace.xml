@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4630250c-fe81-41f7-8ca5-1ba52ba7d83c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n0mFpvtNmAmBRCGy7urXBw28bj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4630250c-fe81-41f7-8ca5-1ba52ba7d83c" name="Default Changelist" comment="" />
+      <created>1610535281670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610535281670</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="433" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1610535283845">
+      <screen x="0" y="0" width="1471" height="864" />
+    </state>
+    <state x="433" y="255" key="com.intellij.ide.util.TipDialog/0.0.1471.864@0.0.1471.864" timestamp="1610535283845" />
+    <state x="177" y="52" key="new project wizard" timestamp="1610535294209">
+      <screen x="0" y="0" width="1471" height="864" />
+    </state>
+    <state x="177" y="52" key="new project wizard/0.0.1471.864@0.0.1471.864" timestamp="1610535294209" />
+  </component>
+</project>
