@@ -6,10 +6,10 @@ use ieee.numeric_std.all;
 package fftpackage is
     constant PI : integer := 180;
     constant TwoPI : integer := 360;
-    constant ROWS, COLS : integer := 512;
-    constant STEP : integer := 9;
+    constant ROWS, COLS : integer := 8;
+    constant STEP : integer := 3;
     -- constant THRESHOLD : float32 := to_float(100);
-    constant bitWidth : integer := 26;
+    constant bitWidth : integer := 9;
     --type array_of_float32 is array(natural range <>) of float32;
     type array_of_slv is array (natural range <>) of std_logic_vector(bitWidth-1 downto 0);
     type array_2d_slv is array (natural range <>) of array_of_slv;
@@ -44,6 +44,7 @@ package fftpackage is
       generic(bitWidth : integer := 32);
       port (
         clk : in std_logic;
+        en : in std_logic;
         input1_real : in std_logic_vector(bitWidth-1 downto 0);
         input1_imag : in std_logic_vector(bitWidth-1 downto 0);
         input2_real : in std_logic_vector(bitWidth-1 downto 0);

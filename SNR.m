@@ -1,0 +1,11 @@
+clc;clear;
+type image_out20.txt;
+vhdl_fft2_out = readmatrix('image_out20.txt');
+vhdl_fft2_out(:,513) = [];
+type peppers.txt;
+ori_image = readmatrix('peppers.txt');
+ori_image(:,513) = [];
+fft2_ori_image = fft2(ori_image);
+output = abs(vhdl_fft2_out - real(fft2_ori_image));
+% snr = sum(output,'all')/(512*512);
+test = snr( real(fft2_ori_image),vhdl_fft2_out);

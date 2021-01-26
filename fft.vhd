@@ -26,9 +26,10 @@ architecture arch of fft is
   signal middle_real, middle_imag : array_of_slv(N - 1 downto 0);
   signal final_done, init_done, last_level : std_logic := '0';
   signal clk_cycles : integer := 0;
+  signal en : std_logic := '0';
   begin
 
-    butterfly_module : butterfly generic map (bitWidth) port map(clk, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
+    butterfly_module : butterfly generic map (bitWidth) port map(clk, en, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
       bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
     
     main_process : process( clk, reset )
@@ -50,6 +51,7 @@ architecture arch of fft is
       variable marked : std_logic_vector(N-1 downto 0) := (others => '0');
       begin
         if rising_edge(clk) then
+  
           if reset = '1' then
             marked := (others=>'0');
             final_done <= '0';
@@ -162,6 +164,7 @@ architecture arch of fft is
                 
                 bt_coef_real <= cos_rom(degree);             
                 bt_coef_imag <= sin_rom(degree);
+                en <= not(en);
               else
               --report "last i  : " & integer'image(last_index_done);
                 -- report "==================================";

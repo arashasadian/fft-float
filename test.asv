@@ -1,0 +1,7 @@
+X = [18 20 22 24 26 27 28 30];
+peppers = [1116.72 642.68 425.64 393.64 265.64 265.64 265.64 265.64];
+lena = [872.59 546.56 384.99 384.99 256.99 256.99 256.99 256.99];
+baboon = [800.47 638.59 539.03 539.03 440.03 411.03 411.03 411.03]
+plot(X,log(peppers),X,log(lena),X,log(baboon));
+title('Peppers 2D Fast Fourier Transform Error')
+legend('Peppers','Lena')

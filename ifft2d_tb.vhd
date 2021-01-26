@@ -22,7 +22,7 @@ architecture arch of ifft2_tb is
         trigonometrics_rom_generator (reset, sin_rom, cos_rom);
         dut : ifft2d generic map(ROWS, COLS) port map(clk, reset, enable, re, im, re_o, im_o, done);
     test2 : process 
-        file infile          : text is in "image_out.txt";
+        file infile          : text is in "imag_gen.txt";
         variable row         : line;
         variable element     : integer;
         variable end_of_line : boolean := true;    
@@ -50,7 +50,7 @@ architecture arch of ifft2_tb is
         reset <= '1' ;
         wait on clk;
         reset <= '0';      
-        report("fft start");    
+        report("ifft start");    
         enable <= '1';
         wait on clk until done = '1';
         enable <= '0';
