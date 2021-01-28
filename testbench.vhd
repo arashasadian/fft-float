@@ -12,7 +12,7 @@ end entity;
 architecture tb of testbench is
 
     signal clk, done, reset : std_logic := '0';
-    signal input_real, input_imag, output_real, output_imag : array_of_slv(3 downto 0);
+    signal input_real, input_imag, output_real, output_imag : array_of_slv(7 downto 0);
 
 
     -- begin
@@ -38,7 +38,7 @@ architecture tb of testbench is
     -- end process ; -- test2
 
 begin
-    dut : fft generic map (4,2) 
+    dut : fft generic map (8,3) 
             port map (clk, reset, input_real, input_imag, output_real, output_imag, done);
     clk <= not(clk) after 10 ns;
     
@@ -50,6 +50,10 @@ begin
             wait on clk;
             reset <= '0';
 
+            for i in 0 to 7 loop
+                input_real(i) <= std_logic_vector(to_signed((i),bitWidth));
+                input_imag(i) <= std_logic_vector(to_signed((8-i),bitWidth));
+            end loop;
             -- input_real(15) <= to_float(2);
             -- input_imag(15) <= to_float(1);
 
@@ -110,17 +114,17 @@ begin
             -- input_real(4) <= std_logic_vector(to_signed(2,bitWidth));
             -- input_imag(4) <= std_logic_vector(to_signed(0,bitWidth));
             
-            input_real(3) <= std_logic_vector(to_signed(3,bitWidth));
-            input_imag(3) <= std_logic_vector(to_signed(0,bitWidth));
+            -- input_real(3) <= std_logic_vector(to_signed(3,bitWidth));
+            -- input_imag(3) <= std_logic_vector(to_signed(0,bitWidth));
             
-            input_real(2) <= std_logic_vector(to_signed(2,bitWidth));
-            input_imag(2) <= std_logic_vector(to_signed(2,bitWidth));
+            -- input_real(2) <= std_logic_vector(to_signed(2,bitWidth));
+            -- input_imag(2) <= std_logic_vector(to_signed(2,bitWidth));
             
-            input_real(1) <= std_logic_vector(to_signed(-1,bitWidth));
-            input_imag(1) <= std_logic_vector(to_signed(2,bitWidth));
+            -- input_real(1) <= std_logic_vector(to_signed(-1,bitWidth));
+            -- input_imag(1) <= std_logic_vector(to_signed(2,bitWidth));
             
-            input_real(0) <= std_logic_vector(to_signed(9,bitWidth));
-            input_imag(0) <= std_logic_vector(to_signed(8,bitWidth));
+            -- input_real(0) <= std_logic_vector(to_signed(9,bitWidth));
+            -- input_imag(0) <= std_logic_vector(to_signed(8,bitWidth));
             wait;
             -- wait on clk until done = '1';
             -- report "done";
