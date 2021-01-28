@@ -7,7 +7,7 @@ package fftpackage is
     constant PI : integer := 180;
     constant TwoPI : integer := 360;
     constant ROWS, COLS : integer := 8;
-    constant STEP : integer := 9;
+    constant STEP : integer := 3;
 
     constant bitWidth : integer := 32;
 
@@ -47,13 +47,14 @@ package fftpackage is
       port (
         clk : in std_logic;
         reset: in std_logic;
-        input_index : in std_logic_vector(31 downto 0);
+        input_index : in std_logic_vector(STEP-1 downto 0);
         bt1_input_real : in std_logic_vector(bitWidth-1 downto 0);
-        bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);
-        output_index : out std_logic_vector(31 downto 0);
+        bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);  
+        output_index : out std_logic_vector(STEP-1 downto 0);
         bt1_output_real : out std_logic_vector(bitWidth-1 downto 0);
-        bt1_output_imag : out std_logic_vector(bitWidth-1 downto 0)
-      );
+        bt1_output_imag : out std_logic_vector(bitWidth-1 downto 0);
+        ready : out std_logic
+    );
   end component;
 
   component last_stage is

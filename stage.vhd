@@ -9,12 +9,13 @@ entity stage is
     port (
         clk : in std_logic;
         reset: in std_logic;
-        input_index : in std_logic_vector(31 downto 0);
+        input_index : in std_logic_vector(STEP-1 downto 0);
         bt1_input_real : in std_logic_vector(bitWidth-1 downto 0);
         bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);  
-        output_index : out std_logic_vector(31 downto 0);
+        output_index : out std_logic_vector(STEP-1 downto 0);
         bt1_output_real : out std_logic_vector(bitWidth-1 downto 0);
-        bt1_output_imag : out std_logic_vector(bitWidth-1 downto 0)
+        bt1_output_imag : out std_logic_vector(bitWidth-1 downto 0);
+        ready : out std_logic
     );
 end entity;
 
@@ -25,30 +26,30 @@ architecture stage_arch of stage is
     signal enable : std_logic := '0';
     
     
-    type shift_register_2d_array is array (size-1 downto 0) of std_logic_vector(31 downto 0);
+    type shift_register_2d_array is array (size-1 downto 0) of std_logic_vector(STEP-1 downto 0);
     type data_array is array (size-1 downto 0) of std_logic_vector(bitWidth-1 downto 0);
     begin
         butterfly_module : butterfly generic map (bitWidth) port map(clk, enable, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
             bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
         process(clk) 
-            variable din, dout : std_logic_vector(31 downto 0);
+            variable din, dout : std_logic_vector(STEP-1 downto 0);
             variable real_dout, imag_dout : std_logic_vector(bitWidth-1 downto 0);
             variable sr : shift_register_2d_array;
             variable real_array, imag_array : data_array;
             variable degree : integer;
             variable k : integer := 0;
-            variable dout_temp, input_index_temp : std_logic_vector(31 downto 0);
+            variable dout_temp, input_index_temp : std_logic_vector(STEP-1 downto 0);
             variable bt_index : integer := 0;
             variable flush_index : integer := -1;
             variable bt_remaining : integer := COLS/2;
             variable start : std_logic := '0';
-            variable last_index_input : std_logic_vector(31 downto 0) := (std_logic_vector(to_signed(-1,32)));
+            variable last_index_input : std_logic_vector(STEP-1 downto 0) := (std_logic_vector(to_signed(-1,STEP)));
             variable state : integer := 0;
             variable flush_time : integer := size + (size/2);
         begin
             if rising_edge(clk) then
                 if reset = '1' then
-                    sr := (others => std_logic_vector(to_signed(-1,32)));
+                    sr := (others => std_logic_vector(to_signed(-1,STEP)));
                     real_array := (others => std_logic_vector(to_signed(-1,bitWidth)));
                     imag_array := (others => std_logic_vector(to_signed(-1,bitWidth)));
                     bt_remaining := COLS/2;
@@ -56,9 +57,10 @@ architecture stage_arch of stage is
                     flush_index := -1;
                     k := 0;
                     state := 0;
-                    output_index <= std_logic_vector(to_signed(-1,32));
-                    bt1_output_real <= std_logic_vector(to_signed(-1,32));
-                    bt1_output_imag <= std_logic_vector(to_signed(-1,32));
+                    output_index <= std_logic_vector(to_signed(-1, STEP));
+                    bt1_output_real <= std_logic_vector(to_signed(-1,bitWidth));
+                    bt1_output_imag <= std_logic_vector(to_signed(-1,bitWidth));
+                    ready <= '0';
                     -- degree := 0;
                 else
                     if start = '1' then
@@ -75,6 +77,7 @@ architecture stage_arch of stage is
                         bt1_output_real <= bt_out1_real;
                         bt1_output_imag <= bt_out1_imag;
                         output_index <= dout;
+                        ready <= '1';
                         start := '0';
                     end if;
                     if  to_integer(signed(sr(size-1))) = -1 and bt_remaining /= 0 then
@@ -88,9 +91,10 @@ architecture stage_arch of stage is
                         real_array(0) := bt1_input_real;
                         imag_array(0):= bt1_input_imag;
                         
-                        output_index <= std_logic_vector(to_signed(-1,32));
-                        bt1_output_real <= std_logic_vector(to_signed(-1,32));
-                        bt1_output_imag <= std_logic_vector(to_signed(-1,32));
+                        output_index <= std_logic_vector(to_signed(-1,STEP));
+                        bt1_output_real <= std_logic_vector(to_signed(-1,bitWidth));
+                        bt1_output_imag <= std_logic_vector(to_signed(-1,bitWidth));
+                        ready <= '0';
                     else
                         if bt_index < size and bt_remaining /= 0 then
                             state := 3;
@@ -125,13 +129,15 @@ architecture stage_arch of stage is
                                 start := '0';
                                 if flush_index < flush_time  then
                                     if flush_index < size/2 then
-                                        output_index <= std_logic_vector(to_signed(-1,32));
-                                        bt1_output_real <= std_logic_vector(to_signed(-1,32));
-                                        bt1_output_imag <= std_logic_vector(to_signed(-1,32));
+                                        output_index <= std_logic_vector(to_signed(-1,STEP));
+                                        bt1_output_real <= std_logic_vector(to_signed(-1,bitWidth));
+                                        bt1_output_imag <= std_logic_vector(to_signed(-1,bitWidth));
+                                        ready <= '0';
                                     else
                                         output_index <= sr(size-1);
                                         bt1_output_real <= real_array(size-1);
                                         bt1_output_imag <= imag_array(size-1);
+                                        ready <= '1';
                                         for i in size-1 downto 1 loop
                                             sr(i) := sr(i-1);
                                             real_array(i) := real_array(i-1);
@@ -158,9 +164,10 @@ architecture stage_arch of stage is
                                         flush_index := -1;
                                         bt_index := 0;
                                     else
-                                        output_index <= std_logic_vector(to_signed(-1,32));
-                                        bt1_output_real <= std_logic_vector(to_signed(-1,32));
-                                        bt1_output_imag <= std_logic_vector(to_signed(-1,32));
+                                        output_index <= std_logic_vector(to_signed(-1,STEP));
+                                        bt1_output_real <= std_logic_vector(to_signed(-1,bitWidth));
+                                        bt1_output_imag <= std_logic_vector(to_signed(-1,bitWidth));
+                                        ready <= '0';
                                     end if;
                                 end if;
                             else
