@@ -92,7 +92,7 @@ architecture my_arch of fft2_tb is
 
 
 
-        report "done1";
+        report "done";
         -- enable <= '0';
         -- wait;
         -- for i in 0 to ROWS-1 loop

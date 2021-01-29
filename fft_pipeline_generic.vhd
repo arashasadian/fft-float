@@ -36,7 +36,7 @@ begin
 
 
     gen_stages : for i in 0 to step-1 generate
-        stage_module : stage generic map(rom_sizes(i) , bitWidth, rom_powers(i)) 
+        stage_module : stage generic map(rom_sizes(i) , bitWidth, rom_powers(i), i) 
           port map(clk, reset, stage_enable, indexes(i), reals(i), imags(i),  indexes(i+1),reals(i+1), imags(i+1), readys(i));
     end generate;
 

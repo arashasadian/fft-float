@@ -5,7 +5,7 @@ use work.fftpackage.all;
 use ieee.numeric_std.all;
 
 entity stage is
-    generic (size : integer ; bitWidth : integer; two_power : integer);
+    generic (size : integer ; bitWidth : integer; two_power : integer ; id : integer);
     port (
         clk : in std_logic;
         reset: in std_logic;
@@ -25,13 +25,13 @@ architecture stage_arch of stage is
     signal bt_out1_imag, bt_out1_real, bt_out2_imag, bt_out2_real : std_logic_vector(bitWidth-1 downto 0);
     signal bt_coef_imag, bt_coef_real : std_logic_vector(bitWidth-1 downto 0);
     signal enable : std_logic := '0';
-    
+    signal overflow : std_logic_vector(3 downto 0);
     
     type shift_register_2d_array is array (size-1 downto 0) of std_logic_vector(STEP-1 downto 0);
     type data_array is array (size-1 downto 0) of std_logic_vector(bitWidth-1 downto 0);
     begin
         butterfly_module : butterfly generic map (bitWidth) port map(clk, enable, bt_in1_real, bt_in1_imag, bt_in2_real, bt_in2_imag,
-            bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag);
+            bt_coef_real, bt_coef_imag, bt_out1_real, bt_out1_imag, bt_out2_real, bt_out2_imag, overflow);
         process(clk) 
             variable din, dout : std_logic_vector(STEP-1 downto 0);
             variable real_dout, imag_dout : std_logic_vector(bitWidth-1 downto 0);
@@ -79,6 +79,8 @@ architecture stage_arch of stage is
                         bt1_output_imag <= bt_out1_imag;
                         output_index <= dout;
                         ready <= '1';
+                        -- report("Overflows = " & integer'image(to_integer(unsigned(overflow))));
+                        overflow_counters(id) <= overflow_counters(id) + to_integer(unsigned(overflow));
                         start := '0';
                     end if;
                     if  to_integer(signed(sr(size-1))) = -1 and bt_remaining /= 0 then

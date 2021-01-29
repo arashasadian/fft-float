@@ -19,7 +19,8 @@ entity butterfly is
     output1_real : out std_logic_vector(bitWidth-1 downto 0);
     output1_imag : out std_logic_vector(bitWidth-1 downto 0);
     output2_real : out std_logic_vector(bitWidth-1 downto 0);
-    output2_imag : out std_logic_vector(bitWidth-1 downto 0)
+    output2_imag : out std_logic_vector(bitWidth-1 downto 0);
+    overflows : out std_logic_vector(3 downto 0)
   ) ;
 end entity butterfly;
 
@@ -28,7 +29,6 @@ architecture butterfly_arch of butterfly is
     signal temp_imag : std_logic_vector(bitWidth-1 downto 0);
     signal temp1_real : std_logic_vector(bitWidth-1 downto 0);
     signal temp1_imag : std_logic_vector(bitWidth-1 downto 0);
-    
     begin
       process(en)
       variable overflow : integer := 0;
@@ -37,22 +37,22 @@ architecture butterfly_arch of butterfly is
           output1_real <= std_logic_vector(resize(signed(input1_real) + signed(input2_real),bitWidth));
           output1_imag <= std_logic_vector(resize(signed(input1_imag) + signed(input2_imag),bitWidth));
           
-          -- -- overflow 
-          -- if (signed(input1_real) > to_signed(0 , bitWidth) and signed(input2_real) > to_signed(0 , bitWidth) and signed(input1_real) + signed(input2_real) < to_signed(0 , bitWidth)) then
-          --   overflow := overflow + 1;
-          -- end if;
+          -- overflow 
+          if (signed(input1_real) > to_signed(0 , bitWidth) and signed(input2_real) > to_signed(0 , bitWidth) and signed(input1_real) + signed(input2_real) < to_signed(0 , bitWidth)) then
+            overflow := overflow + 1;
+          end if;
 
-          -- if (signed(input1_imag) > to_signed(0 , bitWidth) and signed(input2_imag) > to_signed(0 , bitWidth) and signed(input1_imag) + signed(input2_imag) < to_signed(0 , bitWidth)) then
-          --   overflow := overflow + 1;
-          -- end if;
+          if (signed(input1_imag) > to_signed(0 , bitWidth) and signed(input2_imag) > to_signed(0 , bitWidth) and signed(input1_imag) + signed(input2_imag) < to_signed(0 , bitWidth)) then
+            overflow := overflow + 1;
+          end if;
 
-          -- if (signed(input1_real) < to_signed(0 , bitWidth) and signed(input2_real) < to_signed(0 , bitWidth) and signed(input1_real) + signed(input2_real) > to_signed(0 , bitWidth)) then
-          --   overflow := overflow + 1;
-          -- end if;
+          if (signed(input1_real) < to_signed(0 , bitWidth) and signed(input2_real) < to_signed(0 , bitWidth) and signed(input1_real) + signed(input2_real) > to_signed(0 , bitWidth)) then
+            overflow := overflow + 1;
+          end if;
 
-          -- if (signed(input1_imag) < to_signed(0 , bitWidth) and signed(input2_imag) < to_signed(0 , bitWidth) and signed(input1_imag) + signed(input2_imag) > to_signed(0 , bitWidth)) then
-          --   overflow := overflow + 1;
-          -- end if;
+          if (signed(input1_imag) < to_signed(0 , bitWidth) and signed(input2_imag) < to_signed(0 , bitWidth) and signed(input1_imag) + signed(input2_imag) > to_signed(0 , bitWidth)) then
+            overflow := overflow + 1;
+          end if;
 
           -- output1_real <= temp1_real;
           -- output1_imag <= temp1_imag;
@@ -60,8 +60,8 @@ architecture butterfly_arch of butterfly is
           -- temp_imag    <= std_logic_vector(resize(signed(input1_imag) - signed(input2_imag),bitWidth));
           output2_real <= std_logic_vector(resize(((signed(input1_real) - signed(input2_real))*signed(coefficient_real) - (signed(input1_imag) - signed(input2_imag))*signed(coefficient_imag))/255,bitWidth));
           output2_imag <= std_logic_vector(resize(((signed(input1_real) - signed(input2_real))*signed(coefficient_imag) + (signed(input1_imag) - signed(input2_imag))*signed(coefficient_real))/255,bitWidth));
-
-          report integer'image(overflow);
+          overflows <= std_logic_vector(to_signed(overflow, 4));
+          -- report integer'image(overflow);
       end process;
         
 end architecture butterfly_arch;

@@ -9,12 +9,12 @@ package fftpackage is
     constant ROWS, COLS : integer := 512;
     constant STEP : integer := 9;
 
-    constant bitWidth : integer := 32;
+    constant bitWidth : integer := 9;
 
     type array_of_slv is array (COLS-1 downto 0) of std_logic_vector(bitWidth-1 downto 0);
     type array_2d_slv is array (ROWS-1 downto 0) of array_of_slv;
     type array_of_slv_s is array (360 downto 0) of std_logic_vector(bitWidth-1 downto 0);
-
+    type array_of_integer_overflows is array(step-1 downto 0) of integer;
     type fft_state is (RESET_STATE, IDLE, INIT, INIT2, BUSY1, BUSY2);
     type fft2d_state is (IDLE ,FFT_RESET, FAKE, FFT_BUSY, FFT_P, FFT_DONE, FFT_INIT1, FFT_INIT2);
 
@@ -24,7 +24,7 @@ package fftpackage is
 
     signal middle_real, middle_imag : array_of_slv;
     signal sin_rom, cos_rom : array_of_slv_s;
-
+    signal overflow_counters : array_of_integer_overflows := (others => 0);
 
 
   component trigo is
@@ -34,7 +34,7 @@ package fftpackage is
 
 
   component stage is
-      generic (size : integer ; bitWidth : integer; two_power : integer); 
+      generic (size : integer ; bitWidth : integer; two_power : integer; id : integer); 
       port (
         clk : in std_logic;
         reset: in std_logic;
@@ -84,7 +84,8 @@ package fftpackage is
         output1_real : out std_logic_vector(bitWidth-1 downto 0);
         output1_imag : out std_logic_vector(bitWidth-1 downto 0);
         output2_real : out std_logic_vector(bitWidth-1 downto 0);
-        output2_imag : out std_logic_vector(bitWidth-1 downto 0)
+        output2_imag : out std_logic_vector(bitWidth-1 downto 0);
+        overflows : out std_logic_vector(3 downto 0)
       ) ;
     end component butterfly;
 
