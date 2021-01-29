@@ -9,6 +9,7 @@ entity stage is
     port (
         clk : in std_logic;
         reset: in std_logic;
+        en : in std_logic;
         input_index : in std_logic_vector(STEP-1 downto 0);
         bt1_input_real : in std_logic_vector(bitWidth-1 downto 0);
         bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);  
@@ -62,7 +63,7 @@ architecture stage_arch of stage is
                     bt1_output_imag <= std_logic_vector(to_signed(-1,bitWidth));
                     ready <= '0';
                     -- degree := 0;
-                else
+                elsif (en = '1') then
                     if start = '1' then
                         state := 1;
                         for i in size-1 downto 1 loop

@@ -6,8 +6,8 @@ use ieee.numeric_std.all;
 package fftpackage is
     constant PI : integer := 180;
     constant TwoPI : integer := 360;
-    constant ROWS, COLS : integer := 16;
-    constant STEP : integer := 4;
+    constant ROWS, COLS : integer := 512;
+    constant STEP : integer := 9;
 
     constant bitWidth : integer := 32;
 
@@ -16,7 +16,7 @@ package fftpackage is
     type array_of_slv_s is array (360 downto 0) of std_logic_vector(bitWidth-1 downto 0);
 
     type fft_state is (RESET_STATE, IDLE, INIT, INIT2, BUSY1, BUSY2);
-    type fft2d_state is (IDLE ,FFT_RESET, FAKE, FFT_BUSY, FFT_P, FFT_DONE);
+    type fft2d_state is (IDLE ,FFT_RESET, FAKE, FFT_BUSY, FFT_P, FFT_DONE, FFT_INIT1, FFT_INIT2);
 
     signal image_real, image_imag, image_real_out, image_imag_out : array_2d_slv;
    
@@ -32,21 +32,13 @@ package fftpackage is
   end component;
 
 
-  component shift_register is
-      generic(capacity : integer);
-      port(
-        clk : in  std_logic;
-        reset : in  std_logic;
-        d_in : in std_logic_vector(31 downto 0);
-        dout: out  std_logic_vector(31 downto 0)
-      );
-  end component;
 
   component stage is
       generic (size : integer ; bitWidth : integer; two_power : integer); 
       port (
         clk : in std_logic;
         reset: in std_logic;
+        en : in std_logic;
         input_index : in std_logic_vector(STEP-1 downto 0);
         bt1_input_real : in std_logic_vector(bitWidth-1 downto 0);
         bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);  
@@ -57,22 +49,6 @@ package fftpackage is
     );
   end component;
 
-  component last_stage is
-    generic (size : integer ; bitWidth : integer; two_power : integer);
-    port (
-        clk : in std_logic;
-        reset: in std_logic;
-        input_index : in std_logic_vector(31 downto 0);
-        bt1_input_real : in std_logic_vector(bitWidth-1 downto 0);
-        bt1_input_imag : in std_logic_vector(bitWidth-1 downto 0);  
-        output1_index : out std_logic_vector(31 downto 0);
-        output2_index : out std_logic_vector(31 downto 0);
-        bt1_output_real : out std_logic_vector(bitWidth-1 downto 0);
-        bt1_output_imag : out std_logic_vector(bitWidth-1 downto 0);
-        bt2_output_real : out std_logic_vector(bitWidth-1 downto 0);
-        bt2_output_imag : out std_logic_vector(bitWidth-1 downto 0)
-    );
-end component;
 
 
   component fft_pipeline is
@@ -88,6 +64,7 @@ end component;
     generic ( COLS : integer := 8; step : integer := 3);
     port (
       clk : in std_logic;
+      enable : in std_logic;
       reset : in std_logic;
       done : out std_logic
     ) ;
@@ -130,6 +107,16 @@ end component;
       done : out std_logic
     ) ;
     end component fft2d;
+
+    component fft2d_pipeline is
+      generic ( ROWS : integer ; COLS : integer );
+      port (
+      clk : in std_logic;
+      reset : in std_logic;
+      enable : in std_logic;
+      done : out std_logic
+    ) ;
+    end component fft2d_pipeline;
 
     
  

@@ -2,26 +2,28 @@
 # Loading project pipe
 # Compile of package.vhd was successful.
 # Compile of butterfly.vhd was successful.
-# Compile of fft_pipeline_generic.vhd failed with 2 errors.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
 # Compile of pipeline_tb.vhd was successful.
 # Compile of stage.vhd was successful.
 # Compile of trigo.vhd was successful.
 # Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 1 failed with 2 errors.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
 vsim work.pipeline_tb
 # vsim work.pipeline_tb 
-# Start time: 10:29:54 on Jan 29,2021
+# Start time: 11:40:46 on Jan 29,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.fftpackage(body)
 # Loading work.pipeline_tb(pipelinetb)
-# Loading work.fft_pipeline(pipeline_arch)
+# Loading work.fft_pipeline_generic(gen_arch)
 # Loading work.stage(stage_arch)
 # Loading work.butterfly(butterfly_arch)
 # Loading work.trigo(trigoo)
-add wave -position end  /fftpackage/fft_real_out
+add wave -position end  sim:/pipeline_tb/enable
 run
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
@@ -35,117 +37,18 @@ run
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/stage_module3/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/stage_module2/butterfly_module
-# ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/stage_module1/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
 # ** Note: trigo done
 #    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 110 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 130 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 130 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module1/butterfly_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 150 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 150 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module1/butterfly_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 170 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 170 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module1/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 190 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module1/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 210 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module2/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 230 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module2/butterfly_module
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 270 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module3/butterfly_module
-run
-run
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module2/butterfly_module
-# ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module3/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 350 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module2/butterfly_module
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 390 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module3/butterfly_module
-run
-run
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 450 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/stage_module3/butterfly_module
-run
-run
-run
-run
-run
-run
 # ** Note: done
-#    Time: 510 ns  Iteration: 1  Instance: /pipeline_tb
+#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
 run
 run
-add wave -position end  /fftpackage/fft_real_in
-add wave -position end  /fftpackage/fft_imag_in
-# Compile of package.vhd was successful.
-# Compile of butterfly.vhd was successful.
-# Compile of fft_pipeline_generic.vhd failed with 15 errors.
-# Compile of pipeline_tb.vhd was successful.
-# Compile of stage.vhd was successful.
-# Compile of trigo.vhd was successful.
-# Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 1 failed with 15 errors.
-# Compile of package.vhd was successful.
-# Compile of butterfly.vhd was successful.
-# Compile of fft_pipeline_generic.vhd failed with 2 errors.
-# Compile of pipeline_tb.vhd was successful.
-# Compile of stage.vhd was successful.
-# Compile of trigo.vhd was successful.
-# Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 1 failed with 2 errors.
+run
+run
+run
 # Compile of package.vhd was successful.
 # Compile of butterfly.vhd was successful.
 # Compile of fft_pipeline_generic.vhd was successful with warnings.
@@ -153,7 +56,9 @@ add wave -position end  /fftpackage/fft_imag_in
 # Compile of stage.vhd was successful.
 # Compile of trigo.vhd was successful.
 # Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 0 failed with no errors.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
 restart
 # Loading work.fftpackage(body)
 # Loading work.pipeline_tb(pipelinetb)
@@ -174,7 +79,72 @@ run
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+# ** Note: done
+#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+# ** Note: done
+#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
+run
+run
+run
+run
+run
+add wave -position end  /fftpackage/fft_real_out
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
 #    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: 0
@@ -189,263 +159,67 @@ run
 run
 run
 run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 70 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 90 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
 # ** Note: 0
-#    Time: 70 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 90 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 110 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 130 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
 # ** Note: 0
-#    Time: 130 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 110 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 150 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+run
+run
 # ** Note: 0
 #    Time: 150 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 170 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 170 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
-# ** Note: 0
-#    Time: 190 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 270 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 290 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-add wave -position insertpoint  \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/two_power \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/size
-add wave -position insertpoint  \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/two_power \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/size
-add wave -position insertpoint  \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/two_power \
-sim:/pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/size
-# Compile of package.vhd was successful.
-# Compile of butterfly.vhd was successful.
-# Compile of fft_pipeline_generic.vhd was successful with warnings.
-# Compile of pipeline_tb.vhd was successful.
-# Compile of stage.vhd was successful.
-# Compile of trigo.vhd was successful.
-# Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 0 failed with no errors.
-restart
-# Loading work.fftpackage(body)
-# Loading work.pipeline_tb(pipelinetb)
-# Loading work.fft_pipeline_generic(gen_arch)
-# Loading work.stage(stage_arch)
-# Loading work.butterfly(butterfly_arch)
-# Loading work.trigo(trigoo)
-run
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
-# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
-# ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-# ** Note: trigo done
-#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
-# ** Note: done
-#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 110 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 130 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 130 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 150 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 150 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-run
-run
-# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 170 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 170 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 190 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
 # ** Note: 0
 #    Time: 210 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
-# ** Note: 0
-#    Time: 230 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 270 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
 run
 run
 run
 run
 run
 run
-# ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 350 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 390 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+add wave -position end  sim:/pipeline_tb/done
 run
 run
 run
 run
 run
-run
-# ** Note: 0
-#    Time: 450 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-add wave -position end  /fftpackage/fft_real_out
-add wave -position end  /fftpackage/fft_imag_out
 restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+# ** Note: done
+#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
 # Compile of package.vhd was successful.
 # Compile of butterfly.vhd was successful.
 # Compile of fft_pipeline_generic.vhd was successful with warnings.
@@ -453,7 +227,9 @@ restart
 # Compile of stage.vhd was successful.
 # Compile of trigo.vhd was successful.
 # Compile of fft_pipeline.vhd was successful.
-# 7 compiles, 0 failed with no errors.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
 restart
 # Loading work.fftpackage(body)
 # Loading work.pipeline_tb(pipelinetb)
@@ -474,21 +250,432 @@ run
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
 # ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 70 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 90 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Note: 0
+#    Time: 110 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 150 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 210 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+# ** Note: done
+#    Time: 280 ns  Iteration: 0  Instance: /pipeline_tb
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# ** Error: (vsim-3732) /home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd(23): No default binding for component instance 'myfft_pipeline_module'.
+#    The following component port is not on the entity:
+#           enable
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module File: /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# No Design Loaded!
+vsim work.pipeline_tb
+# vsim work.pipeline_tb 
+# Start time: 11:40:46 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# ** Error: (vsim-3732) /home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd(23): No default binding for component instance 'myfft_pipeline_module'.
+#    The following component port is not on the entity:
+#           enable
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module File: /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+# Error loading design
+# End time: 12:29:35 on Jan 29,2021, Elapsed time: 0:48:49
+# Errors: 2, Warnings: 70
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim work.pipeline_tb
+# vsim work.pipeline_tb 
+# Start time: 12:30:29 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# ** Error: (vsim-3732) /home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd(23): No default binding for component instance 'myfft_pipeline_module'.
+#    The following component port is not on the entity:
+#           enable
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module File: /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+# Error loading design
+# End time: 12:30:29 on Jan 29,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim work.pipeline_tb
+# vsim work.pipeline_tb 
+# Start time: 12:31:41 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
 #    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: 0
 #    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
 # ** Note: trigo done
 #    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 70 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 90 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 110 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 150 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 210 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: done
-#    Time: 10 ns  Iteration: 1  Instance: /pipeline_tb
+#    Time: 280 ns  Iteration: 0  Instance: /pipeline_tb
+# Break key hit
+# Simulation stop requested.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+vsim work.fft2_tb(my_arch)
+# End time: 12:33:27 on Jan 29,2021, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 13
+# vsim work.fft2_tb(my_arch) 
+# Start time: 12:33:27 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run -all
+add wave -position end  sim:/fft2_tb/fft2/current_state
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
 run
 run
 run
 run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/fft2_tb/fft2/fft_module/*
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
 run
@@ -504,147 +691,805 @@ run
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 190 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 210 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
 # ** Note: 0
-#    Time: 210 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 230 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 230 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 250 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 # ** Note: 0
-#    Time: 250 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 270 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
-# ** Note: 0
-#    Time: 270 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 290 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
 # ** Note: 0
-#    Time: 290 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+add wave -position 1  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/ready
+add wave -position 2 sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/*
+add wave -position 2  sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/ready
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 310 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+add wave -position insertpoint \
+/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/line__34/sr 
+add wave -position insertpoint sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/*
+add wave -position insertpoint sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/*
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 310 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
 # ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-#    Time: 330 ns  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 # ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 330 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+add wave -position insertpoint  \
+sim:/fft2_tb/fft2/current_state
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd failed with 3 errors.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 1 failed with 3 errors.
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 # ** Note: 0
-#    Time: 350 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 350 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 run
 run
 # ** Note: 0
-#    Time: 370 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run -all
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+restart
+add wave -position insertpoint  \
+sim:/fft2_tb/fft2/fft_module/done
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
 run
 run
 # ** Note: 0
-#    Time: 390 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  /fftpackage/fft_real_in
+add wave -position end  /fftpackage/fft_imag_in
+add wave -position end  /fftpackage/fft_real_out
+add wave -position end  /fftpackage/fft_imag_out
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
 # ** Note: 0
-#    Time: 410 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
 # ** Note: 0
-#    Time: 430 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-run
-run
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
 # ** Note: 0
-#    Time: 470 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
-run
-run
-run
-run
-run
-run
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 # ** Note: 0
-#    Time: 530 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
 # ** Note: 0
-#    Time: 530 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 # ** Note: 0
-#    Time: 550 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
 # ** Note: 0
-#    Time: 570 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 590 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 590 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 610 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 630 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 650 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 650 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 670 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
 run
 run
 run
 run
-# ** Note: 0
-#    Time: 710 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
-run
-run
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 770 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-# ** Note: 0
-#    Time: 770 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
-run
-run
-# ** Note: 0
-#    Time: 790 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(2)/stage_module/butterfly_module
-run
-run
-run
-run
-# ** Note: 0
-#    Time: 830 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
 run
 run
 run
@@ -652,7 +1497,7 @@ run
 run
 run
 # ** Note: 0
-#    Time: 890 ns  Iteration: 1  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(3)/stage_module/butterfly_module
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
 run
 run
 run
@@ -665,3 +1510,1353 @@ run
 run
 run
 run
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+add wave -position 1  sim:/fft2_tb/fft2/current_state
+run
+restart
+add wave -position 2  sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/bt1_output_real
+add wave -position 3  sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/bt1_output_imag
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+add wave -position 2  sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/output_index
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+add wave -position 3  sim:/fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/ready
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/output2_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/output2_imag
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/output1_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/output1_imag
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/input2_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/input2_imag
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/input1_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/input1_imag
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/coefficient_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module/coefficient_imag
+add wave -position end  /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/line__34/sr
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/bt1_input_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/bt1_input_imag
+add wave -position 13  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/input_index
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+# Can't move the Now cursor.
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Note: 0
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+# Load canceled
+add wave -position end  sim:/fft2_tb/clk
+vsim work.pipeline_tb
+# End time: 13:05:00 on Jan 29,2021, Elapsed time: 0:31:33
+# Errors: 2, Warnings: 314
+# vsim work.pipeline_tb 
+# Start time: 13:05:00 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.pipeline_tb(pipelinetb)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+add wave -position end  /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/line__34/sr
+add wave -position end  sim:/pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/clk
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+run
+run
+add wave -position end  sim:/pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/input_index
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/myfft_pipeline_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /pipeline_tb/trigo_module
+run
+run
+run
+vsim work.fft2_tb(my_arch)
+# End time: 13:08:18 on Jan 29,2021, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 22
+# vsim work.fft2_tb(my_arch) 
+# Start time: 13:08:18 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/input_index
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/clk
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/enable
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+add wave -position end  sim:/fft2_tb/fft2/fft_module/enable
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 370 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Note: 0
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd was successful.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  /fftpackage/fft_real_out
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 0
+#    Time: 230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/fft2_tb/fft2/fft_module/reals
+add wave -position end  sim:/fft2_tb/fft2/fft_module/indexes
+add wave -position end  sim:/fft2_tb/fft2/fft_module/imags
+# Can't move the Now cursor.
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/input_index
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/bt1_input_real
+add wave -position end  sim:/fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/bt1_input_imag
+add wave -position end  /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/line__34/sr
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+add wave -position end  /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/line__34/state
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+add wave -position end  /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/line__34/start
+restart
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 10 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+run
+run
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module
+# ** Note: 0
+#    Time: 70 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 90 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd failed with 13 errors.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 1 failed with 13 errors.
+vsim work.fft2_tb(my_arch)
+# End time: 14:00:49 on Jan 29,2021, Elapsed time: 0:52:31
+# Errors: 1, Warnings: 168
+# vsim work.fft2_tb(my_arch) 
+# Start time: 14:00:49 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 0 ps  Iteration: 0  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: trigo done
+#    Time: 0 ps  Iteration: 1  Instance: /fft2_tb/trigo_module
+# ** Note: fft start
+#    Time: 20 ns  Iteration: 0  Instance: /fft2_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 150 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 190 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 250 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 410 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 430 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 530 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 670 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 690 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 690 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 710 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 750 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 810 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 950 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 970 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 970 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 990 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1030 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1090 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1250 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1270 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 1270 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1290 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1330 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1390 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1530 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1550 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 1550 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1570 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1610 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1670 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1810 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 1830 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 1830 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1850 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1890 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 1950 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2090 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 2110 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2170 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2230 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: fft2 clk cycles : 229
+#    Time: 2320 ns  Iteration: 0  Instance: /fft2_tb/fft2
+# ** Note: ifft start
+#    Time: 2330 ns  Iteration: 0  Instance: /fft2_tb
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2410 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2430 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 2430 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2450 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2490 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2550 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2690 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2710 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 2710 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2730 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2770 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 2830 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2970 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 2990 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 2990 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3010 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3050 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3110 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3250 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3270 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 3270 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3290 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3330 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3390 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3550 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3570 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 3570 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3590 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3630 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3690 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3830 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 3850 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 3850 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3870 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3910 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 3970 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 4110 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 4130 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 4130 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4150 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4190 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4250 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 4390 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 4410 ns  Iteration: 0  Instance: /fft2_tb/fft2/fft_module
+# ** Note: 0
+#    Time: 4410 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4430 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(0)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4470 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: 0
+#    Time: 4530 ns  Iteration: 1  Instance: /fft2_tb/fft2/fft_module/gen_stages(1)/stage_module/butterfly_module
+# ** Note: fft2 clk cycles : 228
+#    Time: 4620 ns  Iteration: 0  Instance: /fft2_tb/fft2
+# ** Note: done1
+#    Time: 4620 ns  Iteration: 0  Instance: /fft2_tb
+# Break key hit
+# Break in Process line__35 at /home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd line 35
+quit -sim
+# End time: 14:06:37 on Jan 29,2021, Elapsed time: 0:05:48
+# Errors: 0, Warnings: 43
+# Compile of package.vhd was successful.
+# Compile of butterfly.vhd was successful.
+# Compile of fft_pipeline_generic.vhd was successful with warnings.
+# Compile of pipeline_tb.vhd was successful.
+# Compile of stage.vhd was successful.
+# Compile of trigo.vhd was successful.
+# Compile of fft_pipeline.vhd failed with 13 errors.
+# Compile of fft2d_pipeline.vhd was successful.
+# Compile of fft2d_testbench.vhd was successful with warnings.
+# 9 compiles, 1 failed with 13 errors.
+# Load canceled
+vsim work.fft2_tb(my_arch)
+# vsim work.fft2_tb(my_arch) 
+# Start time: 14:11:03 on Jan 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fftpackage(body)
+# Loading work.fft2_tb(my_arch)
+# Loading work.fft2d_pipeline(arch)
+# Loading work.fft_pipeline_generic(gen_arch)
+# Loading work.stage(stage_arch)
+# Loading work.butterfly(butterfly_arch)
+# Loading work.trigo(trigoo)
+run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_compat.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_nis.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnsl.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# Break key hit
+# Break in Process line__35 at /home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd line 35

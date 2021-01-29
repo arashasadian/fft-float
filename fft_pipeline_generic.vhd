@@ -10,6 +10,7 @@ entity fft_pipeline_generic is
   generic ( COLS : integer := 8; step : integer := 3);
   port (
     clk : in std_logic;
+    enable : in std_logic;
     reset : in std_logic;
     done : out std_logic
   ) ;
@@ -25,8 +26,9 @@ architecture gen_arch of fft_pipeline_generic is
     signal indexes : indexes_array;
     signal reals, imags : data_array;
     signal readys : std_logic_vector(step-1 downto 0);
-    signal rom_sizes: consts_array := (1, 2, 4, 8);
-    signal rom_powers: consts_array := (16, 8, 4, 2);
+signal rom_sizes: consts_array := (1, 2 , 4 , 8 , 16, 32, 64, 128, 256);
+    signal rom_powers: consts_array := ( 512,256, 128, 64, 32, 16,8,4, 2);
+    signal stage_enable : std_logic := '0';
 
 
 
@@ -35,7 +37,7 @@ begin
 
     gen_stages : for i in 0 to step-1 generate
         stage_module : stage generic map(rom_sizes(i) , bitWidth, rom_powers(i)) 
-          port map(clk, reset, indexes(i), reals(i), imags(i),  indexes(i+1),reals(i+1), imags(i+1), readys(i));
+          port map(clk, reset, stage_enable, indexes(i), reals(i), imags(i),  indexes(i+1),reals(i+1), imags(i+1), readys(i));
     end generate;
 
     process(clk)
@@ -53,8 +55,10 @@ begin
             indexes(0)  <= std_logic_vector(to_signed(-1,STEP));
             reals(0)    <= std_logic_vector(to_signed(-1,bitWidth));
             imags(0)    <= std_logic_vector(to_signed(-1,bitWidth));
+            stage_enable <= '0';
             done <= '0';
-          else
+          elsif enable = '1' then
+            stage_enable <= '1';
             if readys(step-1) /= '0' and last_index /= indexes(step) then
               last_index := indexes(step);
               if filling_index < COLS then
@@ -75,6 +79,12 @@ begin
               imags(0) <= fft_imag_in(index);
               index := index + 1;
             end if;
+          else
+            indexes(0)  <= std_logic_vector(to_signed(-1,STEP));
+            reals(0)    <= std_logic_vector(to_signed(-1,bitWidth));
+            imags(0)    <= std_logic_vector(to_signed(-1,bitWidth));
+            done <= '0';
+            stage_enable <= '0';
           end if;
         end if;
     end process;
