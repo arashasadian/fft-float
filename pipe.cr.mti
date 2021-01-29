@@ -1,0 +1,41 @@
+/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fftpackage
+-- Compiling entity stage
+-- Compiling architecture stage_arch of stage
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fftpackage
+-- Compiling entity fft_pipeline
+-- Compiling architecture pipeline_arch of fft_pipeline
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-pipeline/butterfly.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-pipeline/butterfly.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fftpackage
+-- Compiling entity butterfly
+-- Compiling architecture butterfly_arch of butterfly
+
+} {} {}} /home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fftpackage
+-- Compiling entity trigo
+-- Compiling architecture trigoo of trigo
+
+} {} {}}

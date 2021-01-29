@@ -6,8 +6,8 @@ use ieee.numeric_std.all;
 package fftpackage is
     constant PI : integer := 180;
     constant TwoPI : integer := 360;
-    constant ROWS, COLS : integer := 8;
-    constant STEP : integer := 3;
+    constant ROWS, COLS : integer := 16;
+    constant STEP : integer := 4;
 
     constant bitWidth : integer := 32;
 
@@ -83,6 +83,15 @@ end component;
       done : out std_logic
     ) ;
   end component;
+
+  component fft_pipeline_generic is
+    generic ( COLS : integer := 8; step : integer := 3);
+    port (
+      clk : in std_logic;
+      reset : in std_logic;
+      done : out std_logic
+    ) ;
+  end component fft_pipeline_generic;
 
     component butterfly is
       generic(bitWidth : integer := 32);

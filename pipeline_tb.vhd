@@ -20,7 +20,7 @@ architecture pipelinetb of pipeline_tb is
     signal bitWidth : integer := 32;
     begin
         clk <= not clk after 10 ns;
-        fft_pipeline_module : fft_pipeline generic map(8,3) port map(clk,reset,done);
+        myfft_pipeline_module : fft_pipeline_generic generic map(COLS,STEP) port map(clk,reset,done);
         trigo_module : trigo port map(reset);
         process begin
             reset <= '1';
