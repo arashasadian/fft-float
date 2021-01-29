@@ -9,8 +9,8 @@ z2
 cModel Technology
 d/home/arash/test_modelsim
 Ebutterfly
-Z0 w1611930554
-Z1 DPx4 work 10 fftpackage 0 22 nzhXjQSJjE<CE=iF?:?XT3
+Z0 w1611932157
+Z1 DPx4 work 10 fftpackage 0 22 ]1b7EW0jMeSJO2AOT?[3o2
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -23,9 +23,9 @@ VaHPLT@C7EH52NiKZ9g]MN1
 !s100 iI]13Fa^J^5Ca_hb>3Um11
 Z8 OV;C;10.5b;63
 33
-Z9 !s110 1611930834
+Z9 !s110 1611933063
 !i10b 1
-Z10 !s108 1611930834.000000
+Z10 !s108 1611933063.000000
 Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/butterfly.vhd|
 Z12 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/butterfly.vhd|
 !i113 1
@@ -37,10 +37,10 @@ R2
 R3
 R4
 DEx4 work 9 butterfly 0 22 aHPLT@C7EH52NiKZ9g]MN1
-l32
+l28
 L27
-VXjP6Yh[EiHdK?6:VGj:bC2
-!s100 ghI]K:kofG>@E4U4nXW6U2
+VfB[d1?3;AkWM<cFTGe54^0
+!s100 V`4mg;AKW71N<6od14G];0
 R8
 33
 R9
@@ -179,11 +179,11 @@ V:QcB[m;eHBZS63hWfKE290
 !s100 GX=3MM<=fSO;PLh:KEY4i2
 R8
 33
-Z37 !s110 1611930835
+R9
 !i10b 1
-Z38 !s108 1611930835.000000
-Z39 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_testbench.vhd|
-Z40 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft2d_testbench.vhd|
+R10
+Z37 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_testbench.vhd|
+Z38 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft2d_testbench.vhd|
 !i113 1
 R13
 R14
@@ -192,18 +192,18 @@ R2
 R1
 R3
 R4
-Z41 DEx4 work 7 fft2_tb 0 22 :QcB[m;eHBZS63hWfKE290
+Z39 DEx4 work 7 fft2_tb 0 22 :QcB[m;eHBZS63hWfKE290
 l20
 L14
-Z42 VfhB?ba4=fa8iFj<nSZaQ[0
-Z43 !s100 C=i1fJ`@@mBM;XU3iNz?A2
+Z40 VfhB?ba4=fa8iFj<nSZaQ[0
+Z41 !s100 C=i1fJ`@@mBM;XU3iNz?A2
 R8
 33
-R37
+R9
 !i10b 1
+R10
+R37
 R38
-R39
-R40
 !i113 1
 R13
 R14
@@ -212,14 +212,14 @@ R2
 R24
 R3
 R4
-R41
+R39
 l22
 L14
 Vh7hSKaf?Iha`NNk^Rh4<C3
 !s100 ]>k@4D2oi;oG6JLS@1VAO1
 R8
 33
-Z44 !s110 1611753368
+Z42 !s110 1611753368
 !i10b 1
 R20
 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/fft2d_testbench.vhd|
@@ -232,14 +232,14 @@ FC:/Users/sin29/Desktop/fft_git/fft-float/fft2d_testbench.vhd
 8C:/Users/sin29/Desktop/fft_git/fft-float/fft2d_testbench.vhd
 w1611905083
 Efft2d
-Z45 w1610891608
+Z43 w1610891608
 R2
 R24
 R3
 R4
 R16
-Z46 8C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd
-Z47 FC:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd
+Z44 8C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd
+Z45 FC:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd
 l0
 L7
 VH7K<lIZJG2Vg^=D6CcKPI2
@@ -249,8 +249,8 @@ R8
 R19
 !i10b 1
 R20
-Z48 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd|
-Z49 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd|
+Z46 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd|
+Z47 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/fft2d.vhd|
 !i113 1
 R13
 R14
@@ -269,31 +269,31 @@ R8
 R19
 !i10b 1
 R20
-R48
-R49
+R46
+R47
 !i113 1
 R13
 R14
 Efft2d_pipeline
-Z50 w1611916162
+Z48 w1611916162
 R2
 R1
 R3
 R4
 R5
-Z51 8/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd
-Z52 F/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd
+Z49 8/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd
+Z50 F/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd
 l0
 L7
 V[kUbzlYMKMm8mDb2TFgac1
 !s100 N]dP;9PgNX>3E;0I560I63
 R8
 33
-R37
+R9
 !i10b 1
-R38
-Z53 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd|
-Z54 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd|
+R10
+Z51 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd|
+Z52 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft2d_pipeline.vhd|
 !i113 1
 R13
 R14
@@ -309,23 +309,23 @@ V6f>VhZBk0MW0HCPoi]KTW3
 !s100 :jgU@MbU<hnEc<>d=UWaO1
 R8
 33
-R37
+R9
 !i10b 1
-R38
-R53
-R54
+R10
+R51
+R52
 !i113 1
 R13
 R14
 Efft_pipeline
-Z55 w1611910870
+Z53 w1611910870
 R2
 DPx4 work 10 fftpackage 0 22 n>:Yi_D8^gQ_df>188T3j1
 R3
 R4
 R5
-Z56 8/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd
-Z57 F/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd
+Z54 8/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd
+Z55 F/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd
 l0
 L8
 Vfz4GiFlZ=Q`QEQd;7^aUP0
@@ -335,8 +335,8 @@ R8
 !s110 1611928748
 !i10b 1
 !s108 1611928748.000000
-Z58 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd|
-Z59 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd|
+Z56 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd|
+Z57 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline.vhd|
 !i113 1
 R13
 R14
@@ -355,20 +355,20 @@ R8
 !s110 1611913401
 !i10b 1
 !s108 1611913401.000000
-R58
-R59
+R56
+R57
 !i113 1
 R13
 R14
 Efft_pipeline_generic
-Z60 w1611929276
+Z58 w1611929276
 R2
 R1
 R3
 R4
 R5
-Z61 8/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
-Z62 F/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
+Z59 8/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
+Z60 F/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd
 l0
 L9
 V=njDfD?eQAo@lg<OKUU7X1
@@ -378,8 +378,8 @@ R8
 R9
 !i10b 1
 R10
-Z63 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd|
-Z64 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd|
+Z61 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd|
+Z62 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/fft_pipeline_generic.vhd|
 !i113 1
 R13
 R14
@@ -398,20 +398,20 @@ R8
 R9
 !i10b 1
 R10
-R63
-R64
+R61
+R62
 !i113 1
 R13
 R14
 Efft_top
-Z65 w1610890594
+Z63 w1610890594
 R2
 R24
 R3
 R4
 R16
-Z66 8C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd
-Z67 FC:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd
+Z64 8C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd
+Z65 FC:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd
 l0
 L8
 V54FL9c<EE9lz5DAbD6Y_03
@@ -421,8 +421,8 @@ R8
 R19
 !i10b 1
 R20
-Z68 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd|
-Z69 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd|
+Z66 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd|
+Z67 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/fft_top.vhd|
 !i113 1
 R13
 R14
@@ -441,31 +441,31 @@ R8
 R19
 !i10b 1
 R20
-R68
-R69
+R66
+R67
 !i113 1
 R13
 R14
 Efft_top_tb
-Z70 w1611480623
+Z68 w1611480623
 R2
 R24
 R3
 R4
 R16
-Z71 8C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd
-Z72 FC:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd
+Z69 8C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd
+Z70 FC:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd
 l0
 L10
 VQD?AAeY01EADfRg`F<O7V0
 !s100 b[c3k8Ak_`T<fBdHFhZ^U3
 R8
 33
-R44
+R42
 !i10b 1
-Z73 !s108 1611753368.000000
-Z74 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd|
-Z75 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd|
+Z71 !s108 1611753368.000000
+Z72 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd|
+Z73 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/tb.vhd|
 !i113 1
 R13
 R14
@@ -481,11 +481,11 @@ VRiMCf1L49BPGd==CeXSDf3
 !s100 RgSTL<]T9gTlHiN<6om?k3
 R8
 33
-R44
+R42
 !i10b 1
+R71
+R72
 R73
-R74
-R75
 !i113 1
 R13
 R14
@@ -493,21 +493,21 @@ Pfftpackage
 R2
 R3
 R4
-Z76 w1611930831
+Z74 w1611933058
 R5
-Z77 8/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd
-Z78 F/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd
+Z75 8/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd
+Z76 F/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd
 l0
 L6
-VnzhXjQSJjE<CE=iF?:?XT3
-!s100 =AG>O?z8UH1meQPCaWBjo2
+V]1b7EW0jMeSJO2AOT?[3o2
+!s100 n[YC[bdgkLbW;PIK0_M^>2
 R8
 33
 R9
 !i10b 1
 R10
-Z79 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd|
-Z80 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/package.vhd|
+Z77 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/package.vhd|
+Z78 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/package.vhd|
 !i113 1
 R13
 R14
@@ -525,14 +525,14 @@ R8
 R9
 !i10b 1
 R10
-R79
-R80
+R77
+R78
 !i113 1
 R13
 R14
 Efilter
-Z81 w1610866621
-Z82 DPx4 work 10 fftpackage 0 22 @7E^M[C1Z[Nfe;TSX[g9Z0
+Z79 w1610866621
+Z80 DPx4 work 10 fftpackage 0 22 @7E^M[C1Z[Nfe;TSX[g9Z0
 R29
 R30
 R31
@@ -559,31 +559,31 @@ R8
 R13
 R14
 Eifft
-Z83 w1611056370
+Z81 w1611056370
 R2
-Z84 DPx4 work 10 fftpackage 0 22 ?IXZD=NnlfX2^Q8OVBiE60
+Z82 DPx4 work 10 fftpackage 0 22 ?IXZD=NnlfX2^Q8OVBiE60
 R3
 R4
 R16
-Z85 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd
-Z86 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd
+Z83 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd
+Z84 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd
 l0
 L9
 V46Z]`]]@3zZl<K@^fjMAP3
 !s100 UTKcN2YiG2k;Gk<c<^0Xg1
 R8
 33
-Z87 !s110 1611216485
+Z85 !s110 1611216485
 !i10b 1
-Z88 !s108 1611216485.000000
-Z89 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd|
-Z90 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd|
+Z86 !s108 1611216485.000000
+Z87 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd|
+Z88 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft.vhd|
 !i113 1
 R13
 R14
 Aarch
 R2
-R84
+R82
 R3
 R4
 DEx4 work 4 ifft 0 22 46Z]`]]@3zZl<K@^fjMAP3
@@ -593,40 +593,40 @@ Va<N`kAO`bk51Y^BP49O^72
 !s100 iGHCR_non7EW;Q245W_Co0
 R8
 33
-R87
+R85
 !i10b 1
+R86
+R87
 R88
-R89
-R90
 !i113 1
 R13
 R14
 Eifft2_tb
-Z91 w1611171332
+Z89 w1611171332
 R2
-R84
+R82
 R3
 R4
 R16
-Z92 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd
-Z93 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd
+Z90 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd
+Z91 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd
 l0
 L10
 V7d9S8:d?GPAZojLj60N`@3
 !s100 K?0SmINDD7F3TzPWz58IV3
 R8
 33
-Z94 !s110 1611216490
+Z92 !s110 1611216490
 !i10b 1
-Z95 !s108 1611216490.000000
-Z96 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd|
-Z97 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd|
+Z93 !s108 1611216490.000000
+Z94 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd|
+Z95 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d_tb.vhd|
 !i113 1
 R13
 R14
 Aarch
 R2
-R84
+R82
 R3
 R4
 DEx4 work 8 ifft2_tb 0 22 7d9S8:d?GPAZojLj60N`@3
@@ -636,16 +636,16 @@ VTfW4Fb=MJBn92H3=FCYKK2
 !s100 XRNDDk8DU1jzL@L7T^?H?3
 R8
 33
-R94
+R92
 !i10b 1
+R93
+R94
 R95
-R96
-R97
 !i113 1
 R13
 R14
 Aa
-R82
+R80
 R29
 R30
 R31
@@ -661,43 +661,43 @@ Vc`P^eVgfB<dO[E>:QzZE43
 !s100 ZGkSFSC:ib@1=6`]kKP`b0
 R8
 33
-Z98 !s110 1610869194
+Z96 !s110 1610869194
 !i10b 1
-Z99 !s108 1610869193.000000
+Z97 !s108 1610869193.000000
 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:\Users\sin29\Desktop\fft_git\fft-float\ifft2d_tb.vhd|
 !s107 C:\Users\sin29\Desktop\fft_git\fft-float\ifft2d_tb.vhd|
 !i113 1
 R13
 R14
 FC:\Users\sin29\Desktop\fft_git\fft-float\ifft2d_tb.vhd
-R81
+R79
 8C:\Users\sin29\Desktop\fft_git\fft-float\ifft2d_tb.vhd
 Eifft2d
-Z100 w1611056510
+Z98 w1611056510
 R2
-R84
+R82
 R3
 R4
 R16
-Z101 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd
-Z102 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd
+Z99 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd
+Z100 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd
 l0
 L7
 VI3[eD8lR4::4g<?;SYEXE0
 !s100 6l^Y`=jT3Z8aMI:M4UPCS1
 R8
 33
-Z103 !s110 1611215487
+Z101 !s110 1611215487
 !i10b 1
-Z104 !s108 1611215487.000000
-Z105 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd|
-Z106 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd|
+Z102 !s108 1611215487.000000
+Z103 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd|
+Z104 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft2d.vhd|
 !i113 1
 R13
 R14
 Aarch
 R2
-R84
+R82
 R3
 R4
 DEx4 work 6 ifft2d 0 22 I3[eD8lR4::4g<?;SYEXE0
@@ -707,39 +707,39 @@ VNchdXGd7oI<?VgI8eE5=@2
 !s100 8E9E>X4G[6STOBigW39?U0
 R8
 33
-R103
+R101
 !i10b 1
+R102
+R103
 R104
-R105
-R106
 !i113 1
 R13
 R14
 Eifft_tesbench
-Z107 w1611056386
-R84
+Z105 w1611056386
+R82
 R2
 R3
 R4
 R16
-Z108 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd
-Z109 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd
+Z106 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd
+Z107 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd
 l0
 L8
 VXInmJPn2SUD@e7O76GCXN1
 !s100 UD2MCA8fc;D750z9<23V41
 R8
 33
-R87
+R85
 !i10b 1
-R88
-Z110 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd|
-Z111 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd|
+R86
+Z108 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd|
+Z109 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft_tb.vhd|
 !i113 1
 R13
 R14
 Aifft_tb
-R84
+R82
 R2
 R3
 R4
@@ -750,40 +750,40 @@ Vk2F:UOdfeU_]2>60klfDO1
 !s100 Sk5Tb_dB:g3aK7@Q8f2AU2
 R8
 33
-R87
+R85
 !i10b 1
-R88
-R110
-R111
+R86
+R108
+R109
 !i113 1
 R13
 R14
 Eifft_top
-Z112 w1611056459
+Z110 w1611056459
 R2
-R84
+R82
 R3
 R4
 R16
-Z113 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd
-Z114 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd
+Z111 8C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd
+Z112 FC:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd
 l0
 L8
 VgONHMb[lbm5:@_Ak:FDE=0
 !s100 YdF_^eeEWR`jTD8XkPAj82
 R8
 33
-R87
+R85
 !i10b 1
-R88
-Z115 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd|
-Z116 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd|
+R86
+Z113 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd|
+Z114 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/ifft_top.vhd|
 !i113 1
 R13
 R14
 Aarch
 R2
-R84
+R82
 R3
 R4
 DEx4 work 8 ifft_top 0 22 gONHMb[lbm5:@_Ak:FDE=0
@@ -793,23 +793,23 @@ VdWicj3fC9d;b:[k8kN=L82
 !s100 i46VL52c1F=L@N5=HHZgE2
 R8
 33
-R87
+R85
 !i10b 1
-R88
-R115
-R116
+R86
+R113
+R114
 !i113 1
 R13
 R14
 Epipeline_tb
-Z117 w1611916194
+Z115 w1611916194
 R2
 R1
 R3
 R4
 R5
-Z118 8/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd
-Z119 F/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd
+Z116 8/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd
+Z117 F/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd
 l0
 L10
 VGGLQbgc4X5j0SS0B:IIF62
@@ -819,8 +819,8 @@ R8
 R9
 !i10b 1
 R10
-Z120 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd|
-Z121 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd|
+Z118 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd|
+Z119 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/pipeline_tb.vhd|
 !i113 1
 R13
 R14
@@ -839,20 +839,20 @@ R8
 R9
 !i10b 1
 R10
-R120
-R121
+R118
+R119
 !i113 1
 R13
 R14
 Estage
-Z122 w1611929369
+Z120 w1611932214
 R2
 R1
 R3
 R4
 R5
-Z123 8/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd
-Z124 F/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd
+Z121 8/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd
+Z122 F/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd
 l0
 L7
 V8f0CRaLRJF=IRkkTCjnQe2
@@ -862,8 +862,8 @@ R8
 R9
 !i10b 1
 R10
-Z125 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd|
-Z126 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd|
+Z123 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd|
+Z124 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/stage.vhd|
 !i113 1
 R13
 R14
@@ -882,37 +882,37 @@ R8
 R9
 !i10b 1
 R10
-R125
-R126
+R123
+R124
 !i113 1
 R13
 R14
 Etb
-Z127 w1611052295
+Z125 w1611052295
 R2
-R84
+R82
 R3
 R4
 R16
-R71
-R72
+R69
+R70
 l0
 L9
 VQ9Z<MDQ[?5Rb:Bg]cKLlL0
 !s100 12i`Vl89Mo0g1Q[E>WW?[0
 R8
 33
-R103
+R101
 !i10b 1
-R104
-R74
-R75
+R102
+R72
+R73
 !i113 1
 R13
 R14
 Aa
 R2
-R84
+R82
 R3
 R4
 DEx4 work 2 tb 0 22 Q9Z<MDQ[?5Rb:Bg]cKLlL0
@@ -922,16 +922,16 @@ VdP;GlS1X=WhLU?U4HczQF0
 !s100 74GhBFA6VJmPV>Ll]g1]72
 R8
 33
-R103
+R101
 !i10b 1
-R104
-R74
-R75
+R102
+R72
+R73
 !i113 1
 R13
 R14
 Aaa
-R82
+R80
 R29
 R30
 R31
@@ -949,35 +949,35 @@ R8
 33
 !s110 1610869193
 !i10b 1
-R99
-R110
-R111
+R97
+R108
+R109
 !i113 1
 R13
 R14
-R109
-R81
-R108
+R107
+R79
+R106
 Etestbench
-Z128 w1611671864
+Z126 w1611671864
 R24
 R2
 R3
 R4
 R16
-Z129 8C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd
-Z130 FC:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd
+Z127 8C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd
+Z128 FC:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd
 l0
 L8
 VDGgz[lBc[mKf_W=7Qd[i60
 !s100 1c6GghFbP3D[4F?hJ<5gP3
 R8
 33
-R44
+R42
 !i10b 1
-R73
-Z131 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd|
-Z132 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd|
+R71
+Z129 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd|
+Z130 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/testbench.vhd|
 !i113 1
 R13
 R14
@@ -993,16 +993,16 @@ V6dOIhgNkA=_9Yi8cVmzLB2
 !s100 @HJ12[2OB=20cdXi>B]fV2
 R8
 33
-R44
+R42
 !i10b 1
-R73
-R131
-R132
+R71
+R129
+R130
 !i113 1
 R13
 R14
 Etp_tb
-Z133 w1607868958
+Z131 w1607868958
 DPx4 work 10 fftpackage 0 22 `3:KMl[DgX=k5]Dm@_Ci>0
 R29
 R30
@@ -1013,8 +1013,8 @@ R33
 R3
 R4
 R16
-Z134 8C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd
-Z135 FC:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd
+Z132 8C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd
+Z133 FC:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd
 l0
 L10
 V;3QB0M44ciA__lR?;@gJI0
@@ -1024,13 +1024,13 @@ R8
 !s110 1611130374
 !i10b 1
 !s108 1611130374.000000
-Z136 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd|
-Z137 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd|
+Z134 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd|
+Z135 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/transpose_test.vhd|
 !i113 1
 R13
 R14
 Aa
-R82
+R80
 R29
 R30
 R31
@@ -1046,34 +1046,34 @@ VH[[[jI^gM8V=Eb7OA<RF91
 !s100 z8LVFl<d:IY]m;TXLod9W1
 R8
 33
-R98
+R96
 !i10b 1
 !s108 1610869194.000000
-R136
-R137
+R134
+R135
 !i113 1
 R13
 R14
 Etranspose_matrix
-Z138 w1610891493
+Z136 w1610891493
 R2
 R24
 R3
 R4
 R16
-Z139 8C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd
-Z140 FC:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd
+Z137 8C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd
+Z138 FC:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd
 l0
 L8
 VXnh=7E8Fz:56E?4VXcWAP2
 !s100 lD[<6@fL6bbGL@3TjX4Tj3
 R8
 33
-R44
+R42
 !i10b 1
-R73
-Z141 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd|
-Z142 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd|
+R71
+Z139 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd|
+Z140 !s107 C:/Users/sin29/Desktop/fft_git/fft-float/transpose_unit.vhd|
 !i113 1
 R13
 R14
@@ -1089,23 +1089,23 @@ VjBjGhhh=^<:1@OT1d61[M0
 !s100 ojL6YY15Gi;f8hJnSVbKX2
 R8
 33
-R44
+R42
 !i10b 1
-R73
-R141
-R142
+R71
+R139
+R140
 !i113 1
 R13
 R14
 Etrigo
-Z143 w1611859806
+Z141 w1611859806
 R2
 R1
 R3
 R4
 R5
-Z144 8/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd
-Z145 F/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd
+Z142 8/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd
+Z143 F/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd
 l0
 L7
 V0c1OPFk9VI1c1ek2<d87_1
@@ -1115,8 +1115,8 @@ R8
 R9
 !i10b 1
 R10
-Z146 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd|
-Z147 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd|
+Z144 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd|
+Z145 !s107 /home/arash/Desktop/final_project/fft-float-pipeline/trigo.vhd|
 !i113 1
 R13
 R14
@@ -1135,8 +1135,8 @@ R8
 R9
 !i10b 1
 R10
-R146
-R147
+R144
+R145
 !i113 1
 R13
 R14

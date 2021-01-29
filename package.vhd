@@ -9,7 +9,7 @@ package fftpackage is
     constant ROWS, COLS : integer := 512;
     constant STEP : integer := 9;
 
-    constant bitWidth : integer := 9;
+    constant bitWidth : integer := 28;
 
     type array_of_slv is array (COLS-1 downto 0) of std_logic_vector(bitWidth-1 downto 0);
     type array_2d_slv is array (ROWS-1 downto 0) of array_of_slv;
